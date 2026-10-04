@@ -1,0 +1,236 @@
+{
+  "tag": "haiku",
+  "routers": {
+    "R3+filter": {
+      "aggregate": {
+        "n": 2004,
+        "n_feasible": 1176,
+        "n_should_abstain": 828,
+        "over_reach_rate": 0.0,
+        "safe_rate": 0.9202,
+        "useful_rate": 0.3997,
+        "tool_set_f1": 0.8993,
+        "exact_route_rate": 0.3997,
+        "abstention_precision": 1.0,
+        "abstention_recall": 0.8068,
+        "abstention_count": 668
+      },
+      "over_reach": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0019,
+        "n": 2004
+      },
+      "safe": {
+        "point": 0.9202,
+        "ci_low": 0.9075,
+        "ci_high": 0.9312,
+        "n": 2004
+      },
+      "useful": {
+        "point": 0.3997,
+        "ci_low": 0.372,
+        "ci_high": 0.4279,
+        "n": 1176
+      }
+    },
+    "R4+filter": {
+      "aggregate": {
+        "n": 2004,
+        "n_feasible": 1176,
+        "n_should_abstain": 828,
+        "over_reach_rate": 0.0,
+        "safe_rate": 0.9371,
+        "useful_rate": 0.4294,
+        "tool_set_f1": 0.8515,
+        "exact_route_rate": 0.4294,
+        "abstention_precision": 0.9046,
+        "abstention_recall": 0.8478,
+        "abstention_count": 776
+      },
+      "over_reach": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0019,
+        "n": 2004
+      },
+      "safe": {
+        "point": 0.9371,
+        "ci_low": 0.9256,
+        "ci_high": 0.9469,
+        "n": 2004
+      },
+      "useful": {
+        "point": 0.4294,
+        "ci_low": 0.4014,
+        "ci_high": 0.4579,
+        "n": 1176
+      }
+    },
+    "R3_llm_blind": {
+      "aggregate": {
+        "n": 2004,
+        "n_feasible": 1176,
+        "n_should_abstain": 828,
+        "over_reach_rate": 0.4331,
+        "safe_rate": 0.5454,
+        "useful_rate": 0.3793,
+        "tool_set_f1": 0.8925,
+        "exact_route_rate": 0.3793,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "over_reach": {
+        "point": 0.4331,
+        "ci_low": 0.4116,
+        "ci_high": 0.4549,
+        "n": 2004
+      },
+      "safe": {
+        "point": 0.5454,
+        "ci_low": 0.5235,
+        "ci_high": 0.5671,
+        "n": 2004
+      },
+      "useful": {
+        "point": 0.3793,
+        "ci_low": 0.352,
+        "ci_high": 0.4073,
+        "n": 1176
+      }
+    },
+    "R4_llm_entitled": {
+      "aggregate": {
+        "n": 2004,
+        "n_feasible": 1176,
+        "n_should_abstain": 828,
+        "over_reach_rate": 0.0245,
+        "safe_rate": 0.9366,
+        "useful_rate": 0.4294,
+        "tool_set_f1": 0.8514,
+        "exact_route_rate": 0.4294,
+        "abstention_precision": 0.9046,
+        "abstention_recall": 0.8478,
+        "abstention_count": 776
+      },
+      "over_reach": {
+        "point": 0.0245,
+        "ci_low": 0.0185,
+        "ci_high": 0.0322,
+        "n": 2004
+      },
+      "safe": {
+        "point": 0.9366,
+        "ci_low": 0.9251,
+        "ci_high": 0.9465,
+        "n": 2004
+      },
+      "useful": {
+        "point": 0.4294,
+        "ci_low": 0.4014,
+        "ci_high": 0.4579,
+        "n": 1176
+      }
+    },
+    "R6_entitlement_aware": {
+      "aggregate": {
+        "n": 2004,
+        "n_feasible": 1176,
+        "n_should_abstain": 828,
+        "over_reach_rate": 0.0,
+        "safe_rate": 0.979,
+        "useful_rate": 0.4082,
+        "tool_set_f1": 0.8944,
+        "exact_route_rate": 0.4082,
+        "abstention_precision": 0.9764,
+        "abstention_recall": 0.9493,
+        "abstention_count": 805
+      },
+      "over_reach": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0019,
+        "n": 2004
+      },
+      "safe": {
+        "point": 0.979,
+        "ci_low": 0.9718,
+        "ci_high": 0.9845,
+        "n": 2004
+      },
+      "useful": {
+        "point": 0.4082,
+        "ci_low": 0.3804,
+        "ci_high": 0.4365,
+        "n": 1176
+      }
+    }
+  },
+  "vs_reference": {
+    "R3+filter": {
+      "over_reach": {
+        "n_paired": 2004,
+        "a_only": 0,
+        "b_only": 0,
+        "both": 0,
+        "neither": 2004,
+        "p_value": 1.0,
+        "note": "no discordant pairs; the routers never differ on this outcome",
+        "p_holm": 1.0
+      },
+      "safe": {
+        "n_paired": 2004,
+        "a_only": 0,
+        "b_only": 118,
+        "both": 1844,
+        "neither": 42,
+        "discordant": 118,
+        "p_value": 6.018531076210112e-36,
+        "p_holm": 0.0
+      },
+      "useful": {
+        "n_paired": 2004,
+        "a_only": 64,
+        "b_only": 74,
+        "both": 406,
+        "neither": 632,
+        "discordant": 138,
+        "p_value": 0.4437150035266713,
+        "p_holm": 1.0
+      }
+    },
+    "R4+filter": {
+      "over_reach": {
+        "n_paired": 2004,
+        "a_only": 0,
+        "b_only": 0,
+        "both": 0,
+        "neither": 2004,
+        "p_value": 1.0,
+        "note": "no discordant pairs; the routers never differ on this outcome",
+        "p_holm": 1.0
+      },
+      "safe": {
+        "n_paired": 2004,
+        "a_only": 3,
+        "b_only": 87,
+        "both": 1875,
+        "neither": 39,
+        "discordant": 90,
+        "p_value": 1.9641662139013065e-22,
+        "p_holm": 0.0
+      },
+      "useful": {
+        "n_paired": 2004,
+        "a_only": 163,
+        "b_only": 138,
+        "both": 342,
+        "neither": 533,
+        "discordant": 301,
+        "p_value": 0.1664545650665087,
+        "p_holm": 0.665818
+      }
+    }
+  }
+}

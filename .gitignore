@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+cache/
+certs/
+data/*.parquet
+.env

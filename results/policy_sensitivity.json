@@ -1,0 +1,168 @@
+{
+  "arms": {
+    "declared": "haiku",
+    "shuffled": "haiku_shuffled_0"
+  },
+  "strata_sizes": {
+    "declared": {
+      "FEASIBLE": 1176,
+      "INFEASIBLE_SCOPE": 668,
+      "INFEASIBLE_TOOL": 160
+    },
+    "shuffled": {
+      "FEASIBLE": 1240,
+      "INFEASIBLE_SCOPE": 668,
+      "INFEASIBLE_TOOL": 96
+    }
+  },
+  "over_reach_by_stratum": {
+    "R4_llm_entitled": {
+      "INFEASIBLE_SCOPE": {
+        "declared": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "shuffled": {
+          "point": 0.259,
+          "ci_low": 0.2272,
+          "ci_high": 0.2935,
+          "n": 668
+        }
+      },
+      "INFEASIBLE_TOOL": {
+        "declared": {
+          "point": 0.3,
+          "ci_low": 0.2344,
+          "ci_high": 0.375,
+          "n": 160
+        },
+        "shuffled": {
+          "point": 0.0208,
+          "ci_low": 0.0057,
+          "ci_high": 0.0728,
+          "n": 96
+        }
+      },
+      "FEASIBLE": {
+        "declared": {
+          "point": 0.0009,
+          "ci_low": 0.0002,
+          "ci_high": 0.0048,
+          "n": 1176
+        },
+        "shuffled": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0031,
+          "n": 1240
+        }
+      }
+    },
+    "R6_entitlement_aware": {
+      "INFEASIBLE_SCOPE": {
+        "declared": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "shuffled": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        }
+      },
+      "INFEASIBLE_TOOL": {
+        "declared": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0234,
+          "n": 160
+        },
+        "shuffled": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0385,
+          "n": 96
+        }
+      },
+      "FEASIBLE": {
+        "declared": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0033,
+          "n": 1176
+        },
+        "shuffled": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0031,
+          "n": 1240
+        }
+      }
+    }
+  },
+  "false_abstention_on_feasible": {
+    "R4_llm_entitled": {
+      "declared": {
+        "point": 0.0629,
+        "ci_low": 0.0504,
+        "ci_high": 0.0783,
+        "n": 1176
+      },
+      "shuffled": {
+        "point": 0.3444,
+        "ci_low": 0.3184,
+        "ci_high": 0.3712,
+        "n": 1240
+      }
+    },
+    "R6_entitlement_aware": {
+      "declared": {
+        "point": 0.0162,
+        "ci_low": 0.0104,
+        "ci_high": 0.0251,
+        "n": 1176
+      },
+      "shuffled": {
+        "point": 0.0129,
+        "ci_low": 0.008,
+        "ci_high": 0.0209,
+        "n": 1240
+      }
+    }
+  },
+  "abstention_precision": {
+    "R4_llm_entitled": {
+      "declared": {
+        "point": 0.9046,
+        "ci_low": 0.8819,
+        "ci_high": 0.9234,
+        "n": 776
+      },
+      "shuffled": {
+        "point": 0.5713,
+        "ci_low": 0.5403,
+        "ci_high": 0.6017,
+        "n": 996
+      }
+    },
+    "R6_entitlement_aware": {
+      "declared": {
+        "point": 0.9764,
+        "ci_low": 0.9634,
+        "ci_high": 0.9848,
+        "n": 805
+      },
+      "shuffled": {
+        "point": 0.978,
+        "ci_low": 0.9646,
+        "ci_high": 0.9864,
+        "n": 728
+      }
+    }
+  }
+}

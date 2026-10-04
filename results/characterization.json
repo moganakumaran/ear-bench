@@ -1,0 +1,217 @@
+{
+  "source": "FDAbench2026/FDAbench-Full (HuggingFace parquet export)",
+  "base_paper": "FDABench, arXiv:2509.02473, KDD'26",
+  "tasks_total": 2007,
+  "tasks_labelled": 834,
+  "labelled_fraction": 0.4155,
+  "per_config": {
+    "report": {
+      "total": 668,
+      "labelled": 256
+    },
+    "multiple": {
+      "total": 760,
+      "labelled": 341
+    },
+    "single": {
+      "total": 579,
+      "labelled": 237
+    }
+  },
+  "by_level": {
+    "hard": 419,
+    "medium": 279,
+    "easy": 136
+  },
+  "by_database_type": {
+    "Spider2-lite": 570,
+    "bird": 217,
+    "spider1": 25,
+    "dabstep": 22
+  },
+  "by_question_type": {
+    "multiple_choice": 341,
+    "report": 256,
+    "single_choice": 237
+  },
+  "distinct_databases": 73,
+  "route_length": {
+    "mean": 5.1,
+    "min": 3,
+    "max": 7
+  },
+  "tasks_with_depends_on": 256,
+  "sql_alias_normalised_tasks": 256,
+  "tasks_with_db_column_disagreement": 17,
+  "tool_frequency": {
+    "execute_sql": {
+      "tasks": 834,
+      "pct": 100.0
+    },
+    "generated_sql": {
+      "tasks": 834,
+      "pct": 100.0
+    },
+    "get_schema_info": {
+      "tasks": 834,
+      "pct": 100.0
+    },
+    "vector_search": {
+      "tasks": 723,
+      "pct": 86.7
+    },
+    "web_search": {
+      "tasks": 637,
+      "pct": 76.4
+    },
+    "file_system": {
+      "tasks": 23,
+      "pct": 2.8
+    }
+  },
+  "distinct_gold_tool_sets": 5,
+  "gold_tool_sets": [
+    {
+      "tools": [
+        "execute_sql",
+        "generated_sql",
+        "get_schema_info",
+        "vector_search",
+        "web_search"
+      ],
+      "tasks": 575
+    },
+    {
+      "tools": [
+        "execute_sql",
+        "generated_sql",
+        "get_schema_info",
+        "vector_search"
+      ],
+      "tasks": 125
+    },
+    {
+      "tools": [
+        "execute_sql",
+        "generated_sql",
+        "get_schema_info"
+      ],
+      "tasks": 72
+    },
+    {
+      "tools": [
+        "execute_sql",
+        "generated_sql",
+        "get_schema_info",
+        "web_search"
+      ],
+      "tasks": 39
+    },
+    {
+      "tools": [
+        "execute_sql",
+        "file_system",
+        "generated_sql",
+        "get_schema_info",
+        "vector_search",
+        "web_search"
+      ],
+      "tasks": 23
+    }
+  ],
+  "tool_set_size_distribution": {
+    "3": 72,
+    "4": 164,
+    "5": 575,
+    "6": 23
+  },
+  "governed_tool_coverage": {
+    "web_search": {
+      "tasks": 637,
+      "pct": 76.4
+    },
+    "vector_search": {
+      "tasks": 723,
+      "pct": 86.7
+    },
+    "file_system": {
+      "tasks": 23,
+      "pct": 2.8
+    }
+  },
+  "database_task_counts": {
+    "bank_sales_trading": 107,
+    "superstore": 71,
+    "san_francisco_plus": 55,
+    "thelook_ecommerce": 53,
+    "world_development_indicators": 43,
+    "ga360": 40,
+    "professional_basketball": 37,
+    "census_bureau_acs_1": 28,
+    "ga4": 27,
+    "brazilian_e_commerce": 27,
+    "covid19_usa": 24,
+    "census_bureau_international": 23,
+    "firebase": 20,
+    "covid19_symptom_search": 18,
+    "dsbstep": 17,
+    "movielens": 16,
+    "app_store": 16,
+    "world_bank": 14,
+    "ncaa_basketball": 14,
+    "bls": 11,
+    "genes": 11,
+    "covid19_open_data": 11,
+    "covid19_nyt": 10,
+    "customers_and_invoices": 10,
+    "shooting": 9,
+    "customers_card_transactions": 8,
+    "ecommerce": 8,
+    "covid19_jhu_world_bank": 7,
+    "covid19_open_world_bank": 7,
+    "regional_sales": 6,
+    "ncaa_insights": 6,
+    "patents": 5,
+    "soccer_2016": 5,
+    "education_business": 5,
+    "dabstep": 5,
+    "race_track": 4,
+    "stackoverflow": 4,
+    "music_tracker": 3,
+    "e_commerce": 3,
+    "idc": 3,
+    "cms_data": 3,
+    "noaa_data": 2,
+    "new_york": 2,
+    "medicine_enzyme_interaction": 2,
+    "california_traffic_collision": 2,
+    "crypto": 2,
+    "pancancer_atlas_1": 2,
+    "london": 2,
+    "chicago": 2,
+    "ethereum_blockchain": 1,
+    "google_dei": 1,
+    "geo_openstreetmap_worldpop": 1,
+    "school_finance": 1,
+    "global_weather__climate_data_for_bi": 1,
+    "austin": 1,
+    "bbc": 1,
+    "census_galaxy__aiml_model_data_enrichment_sample": 1,
+    "db-imdb": 1,
+    "epa_historical_air_quality": 1,
+    "ghcn_d": 1,
+    "github_repos": 1,
+    "human_genome_variants": 1,
+    "delivery_center": 1,
+    "sqlite-sakila": 1,
+    "sdoh": 1,
+    "open_targets_platform_1": 1,
+    "new_york_plus": 1,
+    "noaa_gsod": 1,
+    "iowa_liquor_sales": 1,
+    "open_targets_genetics_1": 1,
+    "openaq": 1,
+    "_1000_genomes": 1,
+    "electronic_sales": 1
+  }
+}

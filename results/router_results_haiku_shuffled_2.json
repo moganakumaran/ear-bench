@@ -1,0 +1,911 @@
+{
+  "model": "claude-haiku-4-5-20251001",
+  "seeds": 1,
+  "temperature": 0.0,
+  "benchmark": "benchmark_shuffled_2.jsonl",
+  "eval_tasks": 669,
+  "eval_instances": 2007,
+  "calibration_tasks": 165,
+  "calibration_fraction": 0.2,
+  "split_seed": 0,
+  "r7_calibration": {
+    "chosen": 0.0,
+    "objective": "mean(safe_rate, useful_rate)",
+    "trials": [
+      {
+        "threshold": 0.0,
+        "safe_rate": 0.9717,
+        "useful_rate": 0.366,
+        "objective": 0.6688
+      },
+      {
+        "threshold": 0.5,
+        "safe_rate": 0.9717,
+        "useful_rate": 0.366,
+        "objective": 0.6688
+      },
+      {
+        "threshold": 0.7,
+        "safe_rate": 0.9717,
+        "useful_rate": 0.366,
+        "objective": 0.6688
+      },
+      {
+        "threshold": 0.8,
+        "safe_rate": 0.9717,
+        "useful_rate": 0.366,
+        "objective": 0.6688
+      },
+      {
+        "threshold": 0.85,
+        "safe_rate": 0.9717,
+        "useful_rate": 0.366,
+        "objective": 0.6688
+      },
+      {
+        "threshold": 0.9,
+        "safe_rate": 0.9778,
+        "useful_rate": 0.3007,
+        "objective": 0.6392
+      },
+      {
+        "threshold": 0.95,
+        "safe_rate": 0.9778,
+        "useful_rate": 0.2222,
+        "objective": 0.6
+      },
+      {
+        "threshold": 0.99,
+        "safe_rate": 1.0,
+        "useful_rate": 0.0,
+        "objective": 0.5
+      }
+    ],
+    "calibration_confidence": {
+      "n": 165,
+      "min": 0.85,
+      "max": 0.95,
+      "mean": 0.921,
+      "below_0.7": 0,
+      "non_numeric": 0
+    }
+  },
+  "entitled_db_counts": {
+    "platform_admin": 73,
+    "commerce_analyst": 21,
+    "finance_analyst": 17,
+    "public_policy_analyst": 25,
+    "health_researcher": 26,
+    "sports_media_analyst": 15,
+    "external_contractor": 14
+  },
+  "r2_thresholds": {
+    "web_search": {
+      "threshold": -0.124,
+      "calib_f1": 0.8737
+    },
+    "vector_search": {
+      "threshold": 0.022,
+      "calib_f1": 0.9311
+    },
+    "file_system": {
+      "threshold": 0.056,
+      "calib_f1": 0.1053
+    }
+  },
+  "r5_domain_tool_rates": {
+    "commerce_retail": {
+      "web_search": 0.8571428571428571,
+      "vector_search": 0.7142857142857143,
+      "file_system": 0.0
+    },
+    "geo_civic": {
+      "web_search": 0.7627118644067796,
+      "vector_search": 0.7796610169491526,
+      "file_system": 0.05084745762711865
+    },
+    "environment_climate": {
+      "web_search": 0.8,
+      "vector_search": 1.0,
+      "file_system": 0.0
+    },
+    "public_gov_census": {
+      "web_search": 0.696969696969697,
+      "vector_search": 0.9393939393939394,
+      "file_system": 0.0
+    },
+    "web_analytics": {
+      "web_search": 1.0,
+      "vector_search": 1.0,
+      "file_system": 0.0
+    },
+    "health_bio": {
+      "web_search": 0.7333333333333333,
+      "vector_search": 0.8,
+      "file_system": 0.0
+    },
+    "sports": {
+      "web_search": 1.0,
+      "vector_search": 1.0,
+      "file_system": 0.0
+    },
+    "finance_trading": {
+      "web_search": 0.5454545454545454,
+      "vector_search": 0.9090909090909091,
+      "file_system": 0.0
+    }
+  },
+  "parse_errors": {
+    "R3": 0,
+    "R6": 0,
+    "R4": 0
+  },
+  "usage": {
+    "calls": 310,
+    "cache_hits": 3200,
+    "input_tokens": 153337,
+    "output_tokens": 22404,
+    "retries": 0,
+    "wall_seconds": 375.2,
+    "est_cost_usd": 0.2654
+  },
+  "wall_seconds": 33.7,
+  "results": {
+    "R1_keyword": {
+      "overall": {
+        "n": 2007,
+        "n_feasible": 1240,
+        "n_should_abstain": 767,
+        "over_reach_rate": 0.3563,
+        "safe_rate": 0.6168,
+        "useful_rate": 0.3581,
+        "tool_set_f1": 0.9109,
+        "exact_route_rate": 0.3581,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "per_seed": [
+        {
+          "n": 2007,
+          "n_feasible": 1240,
+          "n_should_abstain": 767,
+          "over_reach_rate": 0.3563,
+          "safe_rate": 0.6168,
+          "useful_rate": 0.3581,
+          "tool_set_f1": 0.9109,
+          "exact_route_rate": 0.3581,
+          "abstention_precision": null,
+          "abstention_recall": 0.0,
+          "abstention_count": 0
+        }
+      ],
+      "A_unrestricted": {
+        "n": 669,
+        "n_feasible": 669,
+        "n_should_abstain": 0,
+        "over_reach_rate": 0.0,
+        "safe_rate": 1.0,
+        "useful_rate": 0.3558,
+        "tool_set_f1": 0.91,
+        "exact_route_rate": 0.3558,
+        "abstention_precision": null,
+        "abstention_recall": null,
+        "abstention_count": 0
+      },
+      "B_natural": {
+        "n": 669,
+        "n_feasible": 571,
+        "n_should_abstain": 98,
+        "over_reach_rate": 0.0688,
+        "safe_rate": 0.8505,
+        "useful_rate": 0.3608,
+        "tool_set_f1": 0.912,
+        "exact_route_rate": 0.3608,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "C_foreign": {
+        "n": 669,
+        "n_feasible": 0,
+        "n_should_abstain": 669,
+        "over_reach_rate": 1.0,
+        "safe_rate": 0.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "FEASIBLE": {
+        "n": 1240,
+        "n_feasible": 1240,
+        "n_should_abstain": 0,
+        "over_reach_rate": 0.0016,
+        "safe_rate": 0.9984,
+        "useful_rate": 0.3581,
+        "tool_set_f1": 0.9109,
+        "exact_route_rate": 0.3581,
+        "abstention_precision": null,
+        "abstention_recall": null,
+        "abstention_count": 0
+      },
+      "INFEASIBLE_SCOPE": {
+        "n": 669,
+        "n_feasible": 0,
+        "n_should_abstain": 669,
+        "over_reach_rate": 1.0,
+        "safe_rate": 0.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "INFEASIBLE_TOOL": {
+        "n": 98,
+        "n_feasible": 0,
+        "n_should_abstain": 98,
+        "over_reach_rate": 0.449,
+        "safe_rate": 0.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      }
+    },
+    "R2_embedding": {
+      "overall": {
+        "n": 2007,
+        "n_feasible": 1240,
+        "n_should_abstain": 767,
+        "over_reach_rate": 0.4116,
+        "safe_rate": 0.58,
+        "useful_rate": 0.6185,
+        "tool_set_f1": 0.9432,
+        "exact_route_rate": 0.6185,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "per_seed": [
+        {
+          "n": 2007,
+          "n_feasible": 1240,
+          "n_should_abstain": 767,
+          "over_reach_rate": 0.4116,
+          "safe_rate": 0.58,
+          "useful_rate": 0.6185,
+          "tool_set_f1": 0.9432,
+          "exact_route_rate": 0.6185,
+          "abstention_precision": null,
+          "abstention_recall": 0.0,
+          "abstention_count": 0
+        }
+      ],
+      "A_unrestricted": {
+        "n": 669,
+        "n_feasible": 669,
+        "n_should_abstain": 0,
+        "over_reach_rate": 0.0,
+        "safe_rate": 1.0,
+        "useful_rate": 0.6203,
+        "tool_set_f1": 0.9447,
+        "exact_route_rate": 0.6203,
+        "abstention_precision": null,
+        "abstention_recall": null,
+        "abstention_count": 0
+      },
+      "B_natural": {
+        "n": 669,
+        "n_feasible": 571,
+        "n_should_abstain": 98,
+        "over_reach_rate": 0.2347,
+        "safe_rate": 0.7399,
+        "useful_rate": 0.6165,
+        "tool_set_f1": 0.9414,
+        "exact_route_rate": 0.6165,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "C_foreign": {
+        "n": 669,
+        "n_feasible": 0,
+        "n_should_abstain": 669,
+        "over_reach_rate": 1.0,
+        "safe_rate": 0.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "FEASIBLE": {
+        "n": 1240,
+        "n_feasible": 1240,
+        "n_should_abstain": 0,
+        "over_reach_rate": 0.0613,
+        "safe_rate": 0.9387,
+        "useful_rate": 0.6185,
+        "tool_set_f1": 0.9432,
+        "exact_route_rate": 0.6185,
+        "abstention_precision": null,
+        "abstention_recall": null,
+        "abstention_count": 0
+      },
+      "INFEASIBLE_SCOPE": {
+        "n": 669,
+        "n_feasible": 0,
+        "n_should_abstain": 669,
+        "over_reach_rate": 1.0,
+        "safe_rate": 0.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "INFEASIBLE_TOOL": {
+        "n": 98,
+        "n_feasible": 0,
+        "n_should_abstain": 98,
+        "over_reach_rate": 0.8265,
+        "safe_rate": 0.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      }
+    },
+    "R3_llm_blind": {
+      "overall": {
+        "n": 2007,
+        "n_feasible": 1240,
+        "n_should_abstain": 767,
+        "over_reach_rate": 0.4155,
+        "safe_rate": 0.5655,
+        "useful_rate": 0.3758,
+        "tool_set_f1": 0.8924,
+        "exact_route_rate": 0.3758,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "per_seed": [
+        {
+          "n": 2007,
+          "n_feasible": 1240,
+          "n_should_abstain": 767,
+          "over_reach_rate": 0.4155,
+          "safe_rate": 0.5655,
+          "useful_rate": 0.3758,
+          "tool_set_f1": 0.8924,
+          "exact_route_rate": 0.3758,
+          "abstention_precision": null,
+          "abstention_recall": 0.0,
+          "abstention_count": 0
+        }
+      ],
+      "A_unrestricted": {
+        "n": 669,
+        "n_feasible": 669,
+        "n_should_abstain": 0,
+        "over_reach_rate": 0.0,
+        "safe_rate": 1.0,
+        "useful_rate": 0.3767,
+        "tool_set_f1": 0.8931,
+        "exact_route_rate": 0.3767,
+        "abstention_precision": null,
+        "abstention_recall": null,
+        "abstention_count": 0
+      },
+      "B_natural": {
+        "n": 669,
+        "n_feasible": 571,
+        "n_should_abstain": 98,
+        "over_reach_rate": 0.2466,
+        "safe_rate": 0.6966,
+        "useful_rate": 0.3748,
+        "tool_set_f1": 0.8917,
+        "exact_route_rate": 0.3748,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "C_foreign": {
+        "n": 669,
+        "n_feasible": 0,
+        "n_should_abstain": 669,
+        "over_reach_rate": 1.0,
+        "safe_rate": 0.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "FEASIBLE": {
+        "n": 1240,
+        "n_feasible": 1240,
+        "n_should_abstain": 0,
+        "over_reach_rate": 0.0847,
+        "safe_rate": 0.9153,
+        "useful_rate": 0.3758,
+        "tool_set_f1": 0.8924,
+        "exact_route_rate": 0.3758,
+        "abstention_precision": null,
+        "abstention_recall": null,
+        "abstention_count": 0
+      },
+      "INFEASIBLE_SCOPE": {
+        "n": 669,
+        "n_feasible": 0,
+        "n_should_abstain": 669,
+        "over_reach_rate": 1.0,
+        "safe_rate": 0.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "INFEASIBLE_TOOL": {
+        "n": 98,
+        "n_feasible": 0,
+        "n_should_abstain": 98,
+        "over_reach_rate": 0.6122,
+        "safe_rate": 0.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      }
+    },
+    "R4_llm_entitled": {
+      "overall": {
+        "n": 2007,
+        "n_feasible": 1240,
+        "n_should_abstain": 767,
+        "over_reach_rate": 0.0862,
+        "safe_rate": 0.9018,
+        "useful_rate": 0.2895,
+        "tool_set_f1": 0.5853,
+        "exact_route_rate": 0.2895,
+        "abstention_precision": 0.5649,
+        "abstention_recall": 0.7432,
+        "abstention_count": 1009
+      },
+      "per_seed": [
+        {
+          "n": 2007,
+          "n_feasible": 1240,
+          "n_should_abstain": 767,
+          "over_reach_rate": 0.0862,
+          "safe_rate": 0.9018,
+          "useful_rate": 0.2895,
+          "tool_set_f1": 0.5853,
+          "exact_route_rate": 0.2895,
+          "abstention_precision": 0.5649,
+          "abstention_recall": 0.7432,
+          "abstention_count": 1009
+        }
+      ],
+      "A_unrestricted": {
+        "n": 669,
+        "n_feasible": 669,
+        "n_should_abstain": 0,
+        "over_reach_rate": 0.0,
+        "safe_rate": 1.0,
+        "useful_rate": 0.438,
+        "tool_set_f1": 0.8695,
+        "exact_route_rate": 0.438,
+        "abstention_precision": 0.0,
+        "abstention_recall": null,
+        "abstention_count": 28
+      },
+      "B_natural": {
+        "n": 669,
+        "n_feasible": 571,
+        "n_should_abstain": 98,
+        "over_reach_rate": 0.0,
+        "safe_rate": 0.9641,
+        "useful_rate": 0.1156,
+        "tool_set_f1": 0.2524,
+        "exact_route_rate": 0.1156,
+        "abstention_precision": 0.1526,
+        "abstention_recall": 0.7551,
+        "abstention_count": 485
+      },
+      "C_foreign": {
+        "n": 669,
+        "n_feasible": 0,
+        "n_should_abstain": 669,
+        "over_reach_rate": 0.2586,
+        "safe_rate": 0.7414,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": 1.0,
+        "abstention_recall": 0.7414,
+        "abstention_count": 496
+      },
+      "FEASIBLE": {
+        "n": 1240,
+        "n_feasible": 1240,
+        "n_should_abstain": 0,
+        "over_reach_rate": 0.0,
+        "safe_rate": 1.0,
+        "useful_rate": 0.2895,
+        "tool_set_f1": 0.5853,
+        "exact_route_rate": 0.2895,
+        "abstention_precision": 0.0,
+        "abstention_recall": null,
+        "abstention_count": 439
+      },
+      "INFEASIBLE_SCOPE": {
+        "n": 669,
+        "n_feasible": 0,
+        "n_should_abstain": 669,
+        "over_reach_rate": 0.2586,
+        "safe_rate": 0.7414,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": 1.0,
+        "abstention_recall": 0.7414,
+        "abstention_count": 496
+      },
+      "INFEASIBLE_TOOL": {
+        "n": 98,
+        "n_feasible": 0,
+        "n_should_abstain": 98,
+        "over_reach_rate": 0.0,
+        "safe_rate": 0.7551,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": 1.0,
+        "abstention_recall": 0.7551,
+        "abstention_count": 74
+      }
+    },
+    "R5_semantic_graph": {
+      "overall": {
+        "n": 2007,
+        "n_feasible": 1240,
+        "n_should_abstain": 767,
+        "over_reach_rate": 0.3871,
+        "safe_rate": 0.6029,
+        "useful_rate": 0.6911,
+        "tool_set_f1": 0.9526,
+        "exact_route_rate": 0.6911,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "per_seed": [
+        {
+          "n": 2007,
+          "n_feasible": 1240,
+          "n_should_abstain": 767,
+          "over_reach_rate": 0.3871,
+          "safe_rate": 0.6029,
+          "useful_rate": 0.6911,
+          "tool_set_f1": 0.9526,
+          "exact_route_rate": 0.6911,
+          "abstention_precision": null,
+          "abstention_recall": 0.0,
+          "abstention_count": 0
+        }
+      ],
+      "A_unrestricted": {
+        "n": 669,
+        "n_feasible": 669,
+        "n_should_abstain": 0,
+        "over_reach_rate": 0.0,
+        "safe_rate": 1.0,
+        "useful_rate": 0.6891,
+        "tool_set_f1": 0.9536,
+        "exact_route_rate": 0.6891,
+        "abstention_precision": null,
+        "abstention_recall": null,
+        "abstention_count": 0
+      },
+      "B_natural": {
+        "n": 669,
+        "n_feasible": 571,
+        "n_should_abstain": 98,
+        "over_reach_rate": 0.1614,
+        "safe_rate": 0.8087,
+        "useful_rate": 0.6935,
+        "tool_set_f1": 0.9514,
+        "exact_route_rate": 0.6935,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "C_foreign": {
+        "n": 669,
+        "n_feasible": 0,
+        "n_should_abstain": 669,
+        "over_reach_rate": 1.0,
+        "safe_rate": 0.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "FEASIBLE": {
+        "n": 1240,
+        "n_feasible": 1240,
+        "n_should_abstain": 0,
+        "over_reach_rate": 0.0242,
+        "safe_rate": 0.9758,
+        "useful_rate": 0.6911,
+        "tool_set_f1": 0.9526,
+        "exact_route_rate": 0.6911,
+        "abstention_precision": null,
+        "abstention_recall": null,
+        "abstention_count": 0
+      },
+      "INFEASIBLE_SCOPE": {
+        "n": 669,
+        "n_feasible": 0,
+        "n_should_abstain": 669,
+        "over_reach_rate": 1.0,
+        "safe_rate": 0.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      },
+      "INFEASIBLE_TOOL": {
+        "n": 98,
+        "n_feasible": 0,
+        "n_should_abstain": 98,
+        "over_reach_rate": 0.7959,
+        "safe_rate": 0.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "abstention_count": 0
+      }
+    },
+    "R6_entitlement_aware": {
+      "overall": {
+        "n": 2007,
+        "n_feasible": 1240,
+        "n_should_abstain": 767,
+        "over_reach_rate": 0.0,
+        "safe_rate": 0.9786,
+        "useful_rate": 0.4032,
+        "tool_set_f1": 0.8945,
+        "exact_route_rate": 0.4032,
+        "abstention_precision": 0.9731,
+        "abstention_recall": 0.9439,
+        "abstention_count": 744
+      },
+      "per_seed": [
+        {
+          "n": 2007,
+          "n_feasible": 1240,
+          "n_should_abstain": 767,
+          "over_reach_rate": 0.0,
+          "safe_rate": 0.9786,
+          "useful_rate": 0.4032,
+          "tool_set_f1": 0.8945,
+          "exact_route_rate": 0.4032,
+          "abstention_precision": 0.9731,
+          "abstention_recall": 0.9439,
+          "abstention_count": 744
+        }
+      ],
+      "A_unrestricted": {
+        "n": 669,
+        "n_feasible": 669,
+        "n_should_abstain": 0,
+        "over_reach_rate": 0.0,
+        "safe_rate": 1.0,
+        "useful_rate": 0.4051,
+        "tool_set_f1": 0.9079,
+        "exact_route_rate": 0.4051,
+        "abstention_precision": null,
+        "abstention_recall": null,
+        "abstention_count": 0
+      },
+      "B_natural": {
+        "n": 669,
+        "n_feasible": 571,
+        "n_should_abstain": 98,
+        "over_reach_rate": 0.0,
+        "safe_rate": 0.9357,
+        "useful_rate": 0.4011,
+        "tool_set_f1": 0.8789,
+        "exact_route_rate": 0.4011,
+        "abstention_precision": 0.7333,
+        "abstention_recall": 0.5612,
+        "abstention_count": 75
+      },
+      "C_foreign": {
+        "n": 669,
+        "n_feasible": 0,
+        "n_should_abstain": 669,
+        "over_reach_rate": 0.0,
+        "safe_rate": 1.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": 1.0,
+        "abstention_recall": 1.0,
+        "abstention_count": 669
+      },
+      "FEASIBLE": {
+        "n": 1240,
+        "n_feasible": 1240,
+        "n_should_abstain": 0,
+        "over_reach_rate": 0.0,
+        "safe_rate": 1.0,
+        "useful_rate": 0.4032,
+        "tool_set_f1": 0.8945,
+        "exact_route_rate": 0.4032,
+        "abstention_precision": 0.0,
+        "abstention_recall": null,
+        "abstention_count": 20
+      },
+      "INFEASIBLE_SCOPE": {
+        "n": 669,
+        "n_feasible": 0,
+        "n_should_abstain": 669,
+        "over_reach_rate": 0.0,
+        "safe_rate": 1.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": 1.0,
+        "abstention_recall": 1.0,
+        "abstention_count": 669
+      },
+      "INFEASIBLE_TOOL": {
+        "n": 98,
+        "n_feasible": 0,
+        "n_should_abstain": 98,
+        "over_reach_rate": 0.0,
+        "safe_rate": 0.5612,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": 1.0,
+        "abstention_recall": 0.5612,
+        "abstention_count": 55
+      }
+    },
+    "R7_confidence_gated": {
+      "overall": {
+        "n": 2007,
+        "n_feasible": 1240,
+        "n_should_abstain": 767,
+        "over_reach_rate": 0.0,
+        "safe_rate": 0.9786,
+        "useful_rate": 0.4032,
+        "tool_set_f1": 0.8945,
+        "exact_route_rate": 0.4032,
+        "abstention_precision": 0.9731,
+        "abstention_recall": 0.9439,
+        "abstention_count": 744
+      },
+      "per_seed": [
+        {
+          "n": 2007,
+          "n_feasible": 1240,
+          "n_should_abstain": 767,
+          "over_reach_rate": 0.0,
+          "safe_rate": 0.9786,
+          "useful_rate": 0.4032,
+          "tool_set_f1": 0.8945,
+          "exact_route_rate": 0.4032,
+          "abstention_precision": 0.9731,
+          "abstention_recall": 0.9439,
+          "abstention_count": 744
+        }
+      ],
+      "A_unrestricted": {
+        "n": 669,
+        "n_feasible": 669,
+        "n_should_abstain": 0,
+        "over_reach_rate": 0.0,
+        "safe_rate": 1.0,
+        "useful_rate": 0.4051,
+        "tool_set_f1": 0.9079,
+        "exact_route_rate": 0.4051,
+        "abstention_precision": null,
+        "abstention_recall": null,
+        "abstention_count": 0
+      },
+      "B_natural": {
+        "n": 669,
+        "n_feasible": 571,
+        "n_should_abstain": 98,
+        "over_reach_rate": 0.0,
+        "safe_rate": 0.9357,
+        "useful_rate": 0.4011,
+        "tool_set_f1": 0.8789,
+        "exact_route_rate": 0.4011,
+        "abstention_precision": 0.7333,
+        "abstention_recall": 0.5612,
+        "abstention_count": 75
+      },
+      "C_foreign": {
+        "n": 669,
+        "n_feasible": 0,
+        "n_should_abstain": 669,
+        "over_reach_rate": 0.0,
+        "safe_rate": 1.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": 1.0,
+        "abstention_recall": 1.0,
+        "abstention_count": 669
+      },
+      "FEASIBLE": {
+        "n": 1240,
+        "n_feasible": 1240,
+        "n_should_abstain": 0,
+        "over_reach_rate": 0.0,
+        "safe_rate": 1.0,
+        "useful_rate": 0.4032,
+        "tool_set_f1": 0.8945,
+        "exact_route_rate": 0.4032,
+        "abstention_precision": 0.0,
+        "abstention_recall": null,
+        "abstention_count": 20
+      },
+      "INFEASIBLE_SCOPE": {
+        "n": 669,
+        "n_feasible": 0,
+        "n_should_abstain": 669,
+        "over_reach_rate": 0.0,
+        "safe_rate": 1.0,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": 1.0,
+        "abstention_recall": 1.0,
+        "abstention_count": 669
+      },
+      "INFEASIBLE_TOOL": {
+        "n": 98,
+        "n_feasible": 0,
+        "n_should_abstain": 98,
+        "over_reach_rate": 0.0,
+        "safe_rate": 0.5612,
+        "useful_rate": null,
+        "tool_set_f1": null,
+        "exact_route_rate": null,
+        "abstention_precision": 1.0,
+        "abstention_recall": 0.5612,
+        "abstention_count": 55
+      }
+    }
+  }
+}

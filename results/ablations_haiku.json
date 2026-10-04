@@ -1,0 +1,236 @@
+{
+  "tag": "haiku",
+  "n_instances": 2004,
+  "arms": {
+    "full": {
+      "aggregate": {
+        "n": 2004,
+        "n_feasible": 1176,
+        "n_should_abstain": 828,
+        "over_reach_rate": 0.0,
+        "safe_rate": 0.979,
+        "useful_rate": 0.4082,
+        "tool_set_f1": 0.8944,
+        "exact_route_rate": 0.4082,
+        "abstention_precision": 0.9764,
+        "abstention_recall": 0.9493,
+        "abstention_count": 805
+      },
+      "over_reach": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0019,
+        "n": 2004
+      },
+      "safe": {
+        "point": 0.979,
+        "ci_low": 0.9718,
+        "ci_high": 0.9845,
+        "n": 2004
+      },
+      "useful": {
+        "point": 0.4082,
+        "ci_low": 0.3804,
+        "ci_high": 0.4365,
+        "n": 1176
+      }
+    },
+    "no_entitlement": {
+      "aggregate": {
+        "n": 2004,
+        "n_feasible": 1176,
+        "n_should_abstain": 828,
+        "over_reach_rate": 0.231,
+        "safe_rate": 0.748,
+        "useful_rate": 0.4082,
+        "tool_set_f1": 0.8944,
+        "exact_route_rate": 0.4082,
+        "abstention_precision": 0.9444,
+        "abstention_recall": 0.3901,
+        "abstention_count": 342
+      },
+      "over_reach": {
+        "point": 0.231,
+        "ci_low": 0.2131,
+        "ci_high": 0.25,
+        "n": 2004
+      },
+      "safe": {
+        "point": 0.748,
+        "ci_low": 0.7285,
+        "ci_high": 0.7665,
+        "n": 2004
+      },
+      "useful": {
+        "point": 0.4082,
+        "ci_low": 0.3804,
+        "ci_high": 0.4365,
+        "n": 1176
+      }
+    },
+    "no_feasibility": {
+      "aggregate": {
+        "n": 2004,
+        "n_feasible": 1176,
+        "n_should_abstain": 828,
+        "over_reach_rate": 0.0,
+        "safe_rate": 0.9202,
+        "useful_rate": 0.4141,
+        "tool_set_f1": 0.9093,
+        "exact_route_rate": 0.4141,
+        "abstention_precision": 1.0,
+        "abstention_recall": 0.8068,
+        "abstention_count": 668
+      },
+      "over_reach": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0019,
+        "n": 2004
+      },
+      "safe": {
+        "point": 0.9202,
+        "ci_low": 0.9075,
+        "ci_high": 0.9312,
+        "n": 2004
+      },
+      "useful": {
+        "point": 0.4141,
+        "ci_low": 0.3863,
+        "ci_high": 0.4425,
+        "n": 1176
+      }
+    },
+    "no_extraction": {
+      "aggregate": {
+        "n": 2004,
+        "n_feasible": 1176,
+        "n_should_abstain": 828,
+        "over_reach_rate": 0.0,
+        "safe_rate": 0.9202,
+        "useful_rate": 0.307,
+        "tool_set_f1": 0.9037,
+        "exact_route_rate": 0.307,
+        "abstention_precision": 1.0,
+        "abstention_recall": 0.8068,
+        "abstention_count": 668
+      },
+      "over_reach": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0019,
+        "n": 2004
+      },
+      "safe": {
+        "point": 0.9202,
+        "ci_low": 0.9075,
+        "ci_high": 0.9312,
+        "n": 2004
+      },
+      "useful": {
+        "point": 0.307,
+        "ci_low": 0.2813,
+        "ci_high": 0.3339,
+        "n": 1176
+      }
+    }
+  },
+  "vs_full": {
+    "no_entitlement": {
+      "over_reach": {
+        "n_paired": 2004,
+        "a_only": 463,
+        "b_only": 0,
+        "both": 0,
+        "neither": 1541,
+        "discordant": 463,
+        "p_value": 8.397345134458861e-140,
+        "p_holm": 0.0
+      },
+      "safe": {
+        "n_paired": 2004,
+        "a_only": 0,
+        "b_only": 463,
+        "both": 1499,
+        "neither": 42,
+        "discordant": 463,
+        "p_value": 8.397345134458861e-140,
+        "p_holm": 0.0
+      },
+      "useful": {
+        "n_paired": 2004,
+        "a_only": 0,
+        "b_only": 0,
+        "both": 480,
+        "neither": 696,
+        "p_value": 1.0,
+        "note": "no discordant pairs; the routers never differ on this outcome",
+        "p_holm": 1.0
+      }
+    },
+    "no_feasibility": {
+      "over_reach": {
+        "n_paired": 2004,
+        "a_only": 0,
+        "b_only": 0,
+        "both": 0,
+        "neither": 2004,
+        "p_value": 1.0,
+        "note": "no discordant pairs; the routers never differ on this outcome",
+        "p_holm": 1.0
+      },
+      "safe": {
+        "n_paired": 2004,
+        "a_only": 0,
+        "b_only": 118,
+        "both": 1844,
+        "neither": 42,
+        "discordant": 118,
+        "p_value": 6.018531076210112e-36,
+        "p_holm": 0.0
+      },
+      "useful": {
+        "n_paired": 2004,
+        "a_only": 7,
+        "b_only": 0,
+        "both": 480,
+        "neither": 689,
+        "discordant": 7,
+        "p_value": 0.015625,
+        "p_holm": 0.0625
+      }
+    },
+    "no_extraction": {
+      "over_reach": {
+        "n_paired": 2004,
+        "a_only": 0,
+        "b_only": 0,
+        "both": 0,
+        "neither": 2004,
+        "p_value": 1.0,
+        "note": "no discordant pairs; the routers never differ on this outcome",
+        "p_holm": 1.0
+      },
+      "safe": {
+        "n_paired": 2004,
+        "a_only": 0,
+        "b_only": 118,
+        "both": 1844,
+        "neither": 42,
+        "discordant": 118,
+        "p_value": 6.018531076210112e-36,
+        "p_holm": 0.0
+      },
+      "useful": {
+        "n_paired": 2004,
+        "a_only": 255,
+        "b_only": 374,
+        "both": 106,
+        "neither": 441,
+        "discordant": 629,
+        "p_value": 2.378072061821298e-06,
+        "p_holm": 1.2e-05
+      }
+    }
+  }
+}

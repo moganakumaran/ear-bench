@@ -1,0 +1,588 @@
+{
+  "shuffled_seed0": {
+    "R4_llm_entitled": {
+      "INFEASIBLE_SCOPE:over_reach": {
+        "declared": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "arm": {
+          "point": 0.259,
+          "ci_low": 0.2272,
+          "ci_high": 0.2935,
+          "n": 668
+        },
+        "declared_rate": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "mcnemar": {
+          "n_paired": 535,
+          "a_only": 134,
+          "b_only": 0,
+          "both": 0,
+          "neither": 401,
+          "discordant": 134,
+          "p_value": 9.183549615799121e-41,
+          "p_holm": 0.0
+        }
+      },
+      "FEASIBLE:abstained": {
+        "declared": {
+          "point": 0.0629,
+          "ci_low": 0.0504,
+          "ci_high": 0.0783,
+          "n": 1176
+        },
+        "arm": {
+          "point": 0.3444,
+          "ci_low": 0.3184,
+          "ci_high": 0.3712,
+          "n": 1240
+        },
+        "declared_rate": {
+          "point": 0.0629,
+          "ci_low": 0.0504,
+          "ci_high": 0.0783,
+          "n": 1176
+        },
+        "mcnemar": {
+          "n_paired": 899,
+          "a_only": 192,
+          "b_only": 0,
+          "both": 53,
+          "neither": 654,
+          "discordant": 192,
+          "p_value": 3.1861838222649046e-58,
+          "p_holm": 0.0
+        }
+      }
+    },
+    "R6_entitlement_aware": {
+      "INFEASIBLE_SCOPE:over_reach": {
+        "declared": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "arm": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "declared_rate": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "mcnemar": {
+          "n_paired": 535,
+          "a_only": 0,
+          "b_only": 0,
+          "both": 0,
+          "neither": 535,
+          "p_value": 1.0,
+          "note": "no discordant pairs; the routers never differ on this outcome",
+          "p_holm": 1.0
+        }
+      },
+      "FEASIBLE:abstained": {
+        "declared": {
+          "point": 0.0162,
+          "ci_low": 0.0104,
+          "ci_high": 0.0251,
+          "n": 1176
+        },
+        "arm": {
+          "point": 0.0129,
+          "ci_low": 0.008,
+          "ci_high": 0.0209,
+          "n": 1240
+        },
+        "declared_rate": {
+          "point": 0.0162,
+          "ci_low": 0.0104,
+          "ci_high": 0.0251,
+          "n": 1176
+        },
+        "mcnemar": {
+          "n_paired": 899,
+          "a_only": 0,
+          "b_only": 3,
+          "both": 8,
+          "neither": 888,
+          "discordant": 3,
+          "p_value": 0.25,
+          "p_holm": 1.0
+        }
+      }
+    }
+  },
+  "shuffled_seed1": {
+    "R4_llm_entitled": {
+      "INFEASIBLE_SCOPE:over_reach": {
+        "declared": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "arm": {
+          "point": 0.1931,
+          "ci_low": 0.165,
+          "ci_high": 0.2248,
+          "n": 668
+        },
+        "declared_rate": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "mcnemar": {
+          "n_paired": 535,
+          "a_only": 103,
+          "b_only": 0,
+          "both": 0,
+          "neither": 432,
+          "discordant": 103,
+          "p_value": 1.9721522630525295e-31,
+          "p_holm": 0.0
+        }
+      },
+      "FEASIBLE:abstained": {
+        "declared": {
+          "point": 0.0629,
+          "ci_low": 0.0504,
+          "ci_high": 0.0783,
+          "n": 1176
+        },
+        "arm": {
+          "point": 0.2535,
+          "ci_low": 0.2282,
+          "ci_high": 0.2806,
+          "n": 1057
+        },
+        "declared_rate": {
+          "point": 0.0629,
+          "ci_low": 0.0504,
+          "ci_high": 0.0783,
+          "n": 1176
+        },
+        "mcnemar": {
+          "n_paired": 801,
+          "a_only": 113,
+          "b_only": 0,
+          "both": 59,
+          "neither": 629,
+          "discordant": 113,
+          "p_value": 1.925929944387236e-34,
+          "p_holm": 0.0
+        }
+      }
+    },
+    "R6_entitlement_aware": {
+      "INFEASIBLE_SCOPE:over_reach": {
+        "declared": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "arm": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "declared_rate": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "mcnemar": {
+          "n_paired": 535,
+          "a_only": 0,
+          "b_only": 0,
+          "both": 0,
+          "neither": 535,
+          "p_value": 1.0,
+          "note": "no discordant pairs; the routers never differ on this outcome",
+          "p_holm": 1.0
+        }
+      },
+      "FEASIBLE:abstained": {
+        "declared": {
+          "point": 0.0162,
+          "ci_low": 0.0104,
+          "ci_high": 0.0251,
+          "n": 1176
+        },
+        "arm": {
+          "point": 0.0142,
+          "ci_low": 0.0086,
+          "ci_high": 0.0233,
+          "n": 1057
+        },
+        "declared_rate": {
+          "point": 0.0162,
+          "ci_low": 0.0104,
+          "ci_high": 0.0251,
+          "n": 1176
+        },
+        "mcnemar": {
+          "n_paired": 801,
+          "a_only": 3,
+          "b_only": 3,
+          "both": 9,
+          "neither": 786,
+          "discordant": 6,
+          "p_value": 1.0,
+          "p_holm": 1.0
+        }
+      }
+    }
+  },
+  "shuffled_seed2": {
+    "R4_llm_entitled": {
+      "INFEASIBLE_SCOPE:over_reach": {
+        "declared": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "arm": {
+          "point": 0.2586,
+          "ci_low": 0.2269,
+          "ci_high": 0.2931,
+          "n": 669
+        },
+        "declared_rate": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "mcnemar": {
+          "n_paired": 540,
+          "a_only": 146,
+          "b_only": 0,
+          "both": 0,
+          "neither": 394,
+          "discordant": 146,
+          "p_value": 2.2420775429197073e-44,
+          "p_holm": 0.0
+        }
+      },
+      "FEASIBLE:abstained": {
+        "declared": {
+          "point": 0.0629,
+          "ci_low": 0.0504,
+          "ci_high": 0.0783,
+          "n": 1176
+        },
+        "arm": {
+          "point": 0.354,
+          "ci_low": 0.3279,
+          "ci_high": 0.3811,
+          "n": 1240
+        },
+        "declared_rate": {
+          "point": 0.0629,
+          "ci_low": 0.0504,
+          "ci_high": 0.0783,
+          "n": 1176
+        },
+        "mcnemar": {
+          "n_paired": 910,
+          "a_only": 215,
+          "b_only": 0,
+          "both": 52,
+          "neither": 643,
+          "discordant": 215,
+          "p_value": 3.7982270983039195e-65,
+          "p_holm": 0.0
+        }
+      }
+    },
+    "R6_entitlement_aware": {
+      "INFEASIBLE_SCOPE:over_reach": {
+        "declared": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "arm": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 669
+        },
+        "declared_rate": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "mcnemar": {
+          "n_paired": 540,
+          "a_only": 0,
+          "b_only": 0,
+          "both": 0,
+          "neither": 540,
+          "p_value": 1.0,
+          "note": "no discordant pairs; the routers never differ on this outcome",
+          "p_holm": 1.0
+        }
+      },
+      "FEASIBLE:abstained": {
+        "declared": {
+          "point": 0.0162,
+          "ci_low": 0.0104,
+          "ci_high": 0.0251,
+          "n": 1176
+        },
+        "arm": {
+          "point": 0.0161,
+          "ci_low": 0.0105,
+          "ci_high": 0.0248,
+          "n": 1240
+        },
+        "declared_rate": {
+          "point": 0.0162,
+          "ci_low": 0.0104,
+          "ci_high": 0.0251,
+          "n": 1176
+        },
+        "mcnemar": {
+          "n_paired": 910,
+          "a_only": 0,
+          "b_only": 7,
+          "both": 9,
+          "neither": 894,
+          "discordant": 7,
+          "p_value": 0.015625,
+          "p_holm": 0.171875
+        }
+      }
+    }
+  },
+  "opaque_principals": {
+    "R4_llm_entitled": {
+      "INFEASIBLE_SCOPE:over_reach": {
+        "declared": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "arm": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "declared_rate": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "mcnemar": {
+          "n_paired": 668,
+          "a_only": 0,
+          "b_only": 0,
+          "both": 0,
+          "neither": 668,
+          "p_value": 1.0,
+          "note": "no discordant pairs; the routers never differ on this outcome",
+          "p_holm": 1.0
+        }
+      },
+      "FEASIBLE:abstained": {
+        "declared": {
+          "point": 0.0629,
+          "ci_low": 0.0504,
+          "ci_high": 0.0783,
+          "n": 1176
+        },
+        "arm": {
+          "point": 0.0774,
+          "ci_low": 0.0634,
+          "ci_high": 0.0941,
+          "n": 1176
+        },
+        "declared_rate": {
+          "point": 0.0629,
+          "ci_low": 0.0504,
+          "ci_high": 0.0783,
+          "n": 1176
+        },
+        "mcnemar": {
+          "n_paired": 1176,
+          "a_only": 31,
+          "b_only": 14,
+          "both": 60,
+          "neither": 1071,
+          "discordant": 45,
+          "p_value": 0.016094360031274842,
+          "p_holm": 0.171875
+        }
+      }
+    },
+    "R6_entitlement_aware": {
+      "INFEASIBLE_SCOPE:over_reach": {
+        "declared": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "arm": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "declared_rate": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "mcnemar": {
+          "n_paired": 668,
+          "a_only": 0,
+          "b_only": 0,
+          "both": 0,
+          "neither": 668,
+          "p_value": 1.0,
+          "note": "no discordant pairs; the routers never differ on this outcome",
+          "p_holm": 1.0
+        }
+      },
+      "FEASIBLE:abstained": {
+        "declared": {
+          "point": 0.0162,
+          "ci_low": 0.0104,
+          "ci_high": 0.0251,
+          "n": 1176
+        },
+        "arm": {
+          "point": 0.0162,
+          "ci_low": 0.0104,
+          "ci_high": 0.0251,
+          "n": 1176
+        },
+        "declared_rate": {
+          "point": 0.0162,
+          "ci_low": 0.0104,
+          "ci_high": 0.0251,
+          "n": 1176
+        },
+        "mcnemar": {
+          "n_paired": 1176,
+          "a_only": 0,
+          "b_only": 0,
+          "both": 19,
+          "neither": 1157,
+          "p_value": 1.0,
+          "note": "no discordant pairs; the routers never differ on this outcome",
+          "p_holm": 1.0
+        }
+      }
+    }
+  },
+  "backbone_transfer": {
+    "R4_llm_entitled": {
+      "haiku": {
+        "point": 0.0245,
+        "ci_low": 0.0185,
+        "ci_high": 0.0322,
+        "n": 2004
+      },
+      "sonnet": {
+        "point": 0.0394,
+        "ci_low": 0.0317,
+        "ci_high": 0.0489,
+        "n": 2004
+      },
+      "mcnemar": {
+        "n_paired": 2004,
+        "a_only": 37,
+        "b_only": 7,
+        "both": 42,
+        "neither": 1918,
+        "discordant": 44,
+        "p_value": 5.299581744111492e-06,
+        "p_holm": 6.4e-05
+      }
+    },
+    "R6_entitlement_aware": {
+      "haiku": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0019,
+        "n": 2004
+      },
+      "sonnet": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0019,
+        "n": 2004
+      },
+      "mcnemar": {
+        "n_paired": 2004,
+        "a_only": 0,
+        "b_only": 0,
+        "both": 0,
+        "neither": 2004,
+        "p_value": 1.0,
+        "note": "no discordant pairs; the routers never differ on this outcome",
+        "p_holm": 1.0
+      }
+    },
+    "R3_llm_blind": {
+      "haiku": {
+        "point": 0.4331,
+        "ci_low": 0.4116,
+        "ci_high": 0.4549,
+        "n": 2004
+      },
+      "sonnet": {
+        "point": 0.3927,
+        "ci_low": 0.3716,
+        "ci_high": 0.4143,
+        "n": 2004
+      },
+      "mcnemar": {
+        "n_paired": 2004,
+        "a_only": 4,
+        "b_only": 85,
+        "both": 783,
+        "neither": 1132,
+        "discordant": 89,
+        "p_value": 8.269208261418977e-21,
+        "p_holm": 0.0
+      }
+    }
+  },
+  "usefulness_interval": {
+    "R6_minus_R4": {
+      "n": 1176,
+      "mean_pp": -2.13,
+      "ci_low_pp": -5.02,
+      "ci_high_pp": 0.76
+    }
+  }
+}

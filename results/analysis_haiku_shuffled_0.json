@@ -1,0 +1,1580 @@
+{
+  "tag": "haiku_shuffled_0",
+  "routers": {
+    "R1_keyword": {
+      "n": 2004,
+      "overall": {
+        "over_reach": {
+          "point": 0.3548,
+          "ci_low": 0.3341,
+          "ci_high": 0.376,
+          "n": 2004
+        },
+        "safe": {
+          "point": 0.6163,
+          "ci_low": 0.5948,
+          "ci_high": 0.6373,
+          "n": 2004
+        },
+        "useful": {
+          "point": 0.3492,
+          "ci_low": 0.3232,
+          "ci_high": 0.3762,
+          "n": 1240
+        },
+        "exact_route": {
+          "point": 0.3492,
+          "ci_low": 0.3232,
+          "ci_high": 0.3762,
+          "n": 1240
+        }
+      },
+      "abstention": {
+        "precision": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "recall": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.005,
+          "n": 764
+        }
+      },
+      "A_unrestricted": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "safe": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.3398,
+          "ci_low": 0.3049,
+          "ci_high": 0.3766,
+          "n": 668
+        },
+        "exact_route": {
+          "point": 0.3398,
+          "ci_low": 0.3049,
+          "ci_high": 0.3766,
+          "n": 668
+        }
+      },
+      "B_natural": {
+        "over_reach": {
+          "point": 0.0644,
+          "ci_low": 0.0481,
+          "ci_high": 0.0856,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.8488,
+          "ci_low": 0.8196,
+          "ci_high": 0.874,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.3601,
+          "ci_low": 0.3219,
+          "ci_high": 0.4003,
+          "n": 572
+        },
+        "exact_route": {
+          "point": 0.3601,
+          "ci_low": 0.3219,
+          "ci_high": 0.4003,
+          "n": 572
+        }
+      },
+      "C_foreign": {
+        "over_reach": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      },
+      "FEASIBLE": {
+        "over_reach": {
+          "point": 0.004,
+          "ci_low": 0.0017,
+          "ci_high": 0.0094,
+          "n": 1240
+        },
+        "safe": {
+          "point": 0.996,
+          "ci_low": 0.9906,
+          "ci_high": 0.9983,
+          "n": 1240
+        },
+        "useful": {
+          "point": 0.3492,
+          "ci_low": 0.3232,
+          "ci_high": 0.3762,
+          "n": 1240
+        },
+        "exact_route": {
+          "point": 0.3492,
+          "ci_low": 0.3232,
+          "ci_high": 0.3762,
+          "n": 1240
+        }
+      },
+      "INFEASIBLE_SCOPE": {
+        "over_reach": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      },
+      "INFEASIBLE_TOOL": {
+        "over_reach": {
+          "point": 0.3958,
+          "ci_low": 0.3038,
+          "ci_high": 0.4958,
+          "n": 96
+        },
+        "safe": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0385,
+          "n": 96
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      }
+    },
+    "R2_embedding": {
+      "n": 2004,
+      "overall": {
+        "over_reach": {
+          "point": 0.3977,
+          "ci_low": 0.3765,
+          "ci_high": 0.4193,
+          "n": 2004
+        },
+        "safe": {
+          "point": 0.5928,
+          "ci_low": 0.5711,
+          "ci_high": 0.6141,
+          "n": 2004
+        },
+        "useful": {
+          "point": 0.6605,
+          "ci_low": 0.6337,
+          "ci_high": 0.6863,
+          "n": 1240
+        },
+        "exact_route": {
+          "point": 0.6605,
+          "ci_low": 0.6337,
+          "ci_high": 0.6863,
+          "n": 1240
+        }
+      },
+      "abstention": {
+        "precision": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "recall": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.005,
+          "n": 764
+        }
+      },
+      "A_unrestricted": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "safe": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.6662,
+          "ci_low": 0.6295,
+          "ci_high": 0.7009,
+          "n": 668
+        },
+        "exact_route": {
+          "point": 0.6662,
+          "ci_low": 0.6295,
+          "ci_high": 0.7009,
+          "n": 668
+        }
+      },
+      "B_natural": {
+        "over_reach": {
+          "point": 0.1931,
+          "ci_low": 0.165,
+          "ci_high": 0.2248,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.7784,
+          "ci_low": 0.7454,
+          "ci_high": 0.8083,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.6538,
+          "ci_low": 0.6139,
+          "ci_high": 0.6917,
+          "n": 572
+        },
+        "exact_route": {
+          "point": 0.6538,
+          "ci_low": 0.6139,
+          "ci_high": 0.6917,
+          "n": 572
+        }
+      },
+      "C_foreign": {
+        "over_reach": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      },
+      "FEASIBLE": {
+        "over_reach": {
+          "point": 0.0419,
+          "ci_low": 0.0321,
+          "ci_high": 0.0546,
+          "n": 1240
+        },
+        "safe": {
+          "point": 0.9581,
+          "ci_low": 0.9454,
+          "ci_high": 0.9679,
+          "n": 1240
+        },
+        "useful": {
+          "point": 0.6605,
+          "ci_low": 0.6337,
+          "ci_high": 0.6863,
+          "n": 1240
+        },
+        "exact_route": {
+          "point": 0.6605,
+          "ci_low": 0.6337,
+          "ci_high": 0.6863,
+          "n": 1240
+        }
+      },
+      "INFEASIBLE_SCOPE": {
+        "over_reach": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      },
+      "INFEASIBLE_TOOL": {
+        "over_reach": {
+          "point": 0.8021,
+          "ci_low": 0.7114,
+          "ci_high": 0.8695,
+          "n": 96
+        },
+        "safe": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0385,
+          "n": 96
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      }
+    },
+    "R3_llm_blind": {
+      "n": 2004,
+      "overall": {
+        "over_reach": {
+          "point": 0.4042,
+          "ci_low": 0.3829,
+          "ci_high": 0.4258,
+          "n": 2004
+        },
+        "safe": {
+          "point": 0.5699,
+          "ci_low": 0.5481,
+          "ci_high": 0.5914,
+          "n": 2004
+        },
+        "useful": {
+          "point": 0.3742,
+          "ci_low": 0.3477,
+          "ci_high": 0.4015,
+          "n": 1240
+        },
+        "exact_route": {
+          "point": 0.3742,
+          "ci_low": 0.3477,
+          "ci_high": 0.4015,
+          "n": 1240
+        }
+      },
+      "abstention": {
+        "precision": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "recall": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.005,
+          "n": 764
+        }
+      },
+      "A_unrestricted": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "safe": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.3728,
+          "ci_low": 0.3369,
+          "ci_high": 0.4101,
+          "n": 668
+        },
+        "exact_route": {
+          "point": 0.3728,
+          "ci_low": 0.3369,
+          "ci_high": 0.4101,
+          "n": 668
+        }
+      },
+      "B_natural": {
+        "over_reach": {
+          "point": 0.2126,
+          "ci_low": 0.1832,
+          "ci_high": 0.2452,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.7096,
+          "ci_low": 0.674,
+          "ci_high": 0.7427,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.3759,
+          "ci_low": 0.3371,
+          "ci_high": 0.4163,
+          "n": 572
+        },
+        "exact_route": {
+          "point": 0.3759,
+          "ci_low": 0.3371,
+          "ci_high": 0.4163,
+          "n": 572
+        }
+      },
+      "C_foreign": {
+        "over_reach": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      },
+      "FEASIBLE": {
+        "over_reach": {
+          "point": 0.079,
+          "ci_low": 0.0653,
+          "ci_high": 0.0954,
+          "n": 1240
+        },
+        "safe": {
+          "point": 0.921,
+          "ci_low": 0.9046,
+          "ci_high": 0.9347,
+          "n": 1240
+        },
+        "useful": {
+          "point": 0.3742,
+          "ci_low": 0.3477,
+          "ci_high": 0.4015,
+          "n": 1240
+        },
+        "exact_route": {
+          "point": 0.3742,
+          "ci_low": 0.3477,
+          "ci_high": 0.4015,
+          "n": 1240
+        }
+      },
+      "INFEASIBLE_SCOPE": {
+        "over_reach": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      },
+      "INFEASIBLE_TOOL": {
+        "over_reach": {
+          "point": 0.4583,
+          "ci_low": 0.3622,
+          "ci_high": 0.5577,
+          "n": 96
+        },
+        "safe": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0385,
+          "n": 96
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      }
+    },
+    "R4_llm_entitled": {
+      "n": 2004,
+      "overall": {
+        "over_reach": {
+          "point": 0.0873,
+          "ci_low": 0.0757,
+          "ci_high": 0.1005,
+          "n": 2004
+        },
+        "safe": {
+          "point": 0.9027,
+          "ci_low": 0.8889,
+          "ci_high": 0.9149,
+          "n": 2004
+        },
+        "useful": {
+          "point": 0.2871,
+          "ci_low": 0.2626,
+          "ci_high": 0.3129,
+          "n": 1240
+        },
+        "exact_route": {
+          "point": 0.2871,
+          "ci_low": 0.2626,
+          "ci_high": 0.3129,
+          "n": 1240
+        }
+      },
+      "abstention": {
+        "precision": {
+          "point": 0.5713,
+          "ci_low": 0.5403,
+          "ci_high": 0.6017,
+          "n": 996
+        },
+        "recall": {
+          "point": 0.7448,
+          "ci_low": 0.7127,
+          "ci_high": 0.7744,
+          "n": 764
+        }
+      },
+      "A_unrestricted": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "safe": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.4207,
+          "ci_low": 0.3838,
+          "ci_high": 0.4584,
+          "n": 668
+        },
+        "exact_route": {
+          "point": 0.4207,
+          "ci_low": 0.3838,
+          "ci_high": 0.4584,
+          "n": 668
+        }
+      },
+      "B_natural": {
+        "over_reach": {
+          "point": 0.003,
+          "ci_low": 0.0008,
+          "ci_high": 0.0109,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.9671,
+          "ci_low": 0.9506,
+          "ci_high": 0.9782,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.1311,
+          "ci_low": 0.1059,
+          "ci_high": 0.1613,
+          "n": 572
+        },
+        "exact_route": {
+          "point": 0.1311,
+          "ci_low": 0.1059,
+          "ci_high": 0.1613,
+          "n": 572
+        }
+      },
+      "C_foreign": {
+        "over_reach": {
+          "point": 0.259,
+          "ci_low": 0.2272,
+          "ci_high": 0.2935,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.741,
+          "ci_low": 0.7065,
+          "ci_high": 0.7728,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      },
+      "FEASIBLE": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0031,
+          "n": 1240
+        },
+        "safe": {
+          "point": 1.0,
+          "ci_low": 0.9969,
+          "ci_high": 1.0,
+          "n": 1240
+        },
+        "useful": {
+          "point": 0.2871,
+          "ci_low": 0.2626,
+          "ci_high": 0.3129,
+          "n": 1240
+        },
+        "exact_route": {
+          "point": 0.2871,
+          "ci_low": 0.2626,
+          "ci_high": 0.3129,
+          "n": 1240
+        }
+      },
+      "INFEASIBLE_SCOPE": {
+        "over_reach": {
+          "point": 0.259,
+          "ci_low": 0.2272,
+          "ci_high": 0.2935,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.741,
+          "ci_low": 0.7065,
+          "ci_high": 0.7728,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      },
+      "INFEASIBLE_TOOL": {
+        "over_reach": {
+          "point": 0.0208,
+          "ci_low": 0.0057,
+          "ci_high": 0.0728,
+          "n": 96
+        },
+        "safe": {
+          "point": 0.7708,
+          "ci_low": 0.6773,
+          "ci_high": 0.8435,
+          "n": 96
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      }
+    },
+    "R5_semantic_graph": {
+      "n": 2004,
+      "overall": {
+        "over_reach": {
+          "point": 0.3952,
+          "ci_low": 0.374,
+          "ci_high": 0.4168,
+          "n": 2004
+        },
+        "safe": {
+          "point": 0.5953,
+          "ci_low": 0.5737,
+          "ci_high": 0.6166,
+          "n": 2004
+        },
+        "useful": {
+          "point": 0.6742,
+          "ci_low": 0.6476,
+          "ci_high": 0.6997,
+          "n": 1240
+        },
+        "exact_route": {
+          "point": 0.6742,
+          "ci_low": 0.6476,
+          "ci_high": 0.6997,
+          "n": 1240
+        }
+      },
+      "abstention": {
+        "precision": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "recall": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.005,
+          "n": 764
+        }
+      },
+      "A_unrestricted": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "safe": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.6811,
+          "ci_low": 0.6448,
+          "ci_high": 0.7154,
+          "n": 668
+        },
+        "exact_route": {
+          "point": 0.6811,
+          "ci_low": 0.6448,
+          "ci_high": 0.7154,
+          "n": 668
+        }
+      },
+      "B_natural": {
+        "over_reach": {
+          "point": 0.1856,
+          "ci_low": 0.158,
+          "ci_high": 0.2169,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.7859,
+          "ci_low": 0.7532,
+          "ci_high": 0.8154,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.6661,
+          "ci_low": 0.6264,
+          "ci_high": 0.7035,
+          "n": 572
+        },
+        "exact_route": {
+          "point": 0.6661,
+          "ci_low": 0.6264,
+          "ci_high": 0.7035,
+          "n": 572
+        }
+      },
+      "C_foreign": {
+        "over_reach": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      },
+      "FEASIBLE": {
+        "over_reach": {
+          "point": 0.0379,
+          "ci_low": 0.0286,
+          "ci_high": 0.05,
+          "n": 1240
+        },
+        "safe": {
+          "point": 0.9621,
+          "ci_low": 0.95,
+          "ci_high": 0.9714,
+          "n": 1240
+        },
+        "useful": {
+          "point": 0.6742,
+          "ci_low": 0.6476,
+          "ci_high": 0.6997,
+          "n": 1240
+        },
+        "exact_route": {
+          "point": 0.6742,
+          "ci_low": 0.6476,
+          "ci_high": 0.6997,
+          "n": 1240
+        }
+      },
+      "INFEASIBLE_SCOPE": {
+        "over_reach": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      },
+      "INFEASIBLE_TOOL": {
+        "over_reach": {
+          "point": 0.8021,
+          "ci_low": 0.7114,
+          "ci_high": 0.8695,
+          "n": 96
+        },
+        "safe": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0385,
+          "n": 96
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      }
+    },
+    "R6_entitlement_aware": {
+      "n": 2004,
+      "overall": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0019,
+          "n": 2004
+        },
+        "safe": {
+          "point": 0.9741,
+          "ci_low": 0.9661,
+          "ci_high": 0.9802,
+          "n": 2004
+        },
+        "useful": {
+          "point": 0.4081,
+          "ci_low": 0.381,
+          "ci_high": 0.4357,
+          "n": 1240
+        },
+        "exact_route": {
+          "point": 0.4081,
+          "ci_low": 0.381,
+          "ci_high": 0.4357,
+          "n": 1240
+        }
+      },
+      "abstention": {
+        "precision": {
+          "point": 0.978,
+          "ci_low": 0.9646,
+          "ci_high": 0.9864,
+          "n": 728
+        },
+        "recall": {
+          "point": 0.9319,
+          "ci_low": 0.9118,
+          "ci_high": 0.9477,
+          "n": 764
+        }
+      },
+      "A_unrestricted": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "safe": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.4027,
+          "ci_low": 0.3662,
+          "ci_high": 0.4403,
+          "n": 668
+        },
+        "exact_route": {
+          "point": 0.4027,
+          "ci_low": 0.3662,
+          "ci_high": 0.4403,
+          "n": 668
+        }
+      },
+      "B_natural": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.9222,
+          "ci_low": 0.8993,
+          "ci_high": 0.9401,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.4143,
+          "ci_low": 0.3747,
+          "ci_high": 0.4551,
+          "n": 572
+        },
+        "exact_route": {
+          "point": 0.4143,
+          "ci_low": 0.3747,
+          "ci_high": 0.4551,
+          "n": 572
+        }
+      },
+      "C_foreign": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "safe": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      },
+      "FEASIBLE": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0031,
+          "n": 1240
+        },
+        "safe": {
+          "point": 1.0,
+          "ci_low": 0.9969,
+          "ci_high": 1.0,
+          "n": 1240
+        },
+        "useful": {
+          "point": 0.4081,
+          "ci_low": 0.381,
+          "ci_high": 0.4357,
+          "n": 1240
+        },
+        "exact_route": {
+          "point": 0.4081,
+          "ci_low": 0.381,
+          "ci_high": 0.4357,
+          "n": 1240
+        }
+      },
+      "INFEASIBLE_SCOPE": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "safe": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      },
+      "INFEASIBLE_TOOL": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0385,
+          "n": 96
+        },
+        "safe": {
+          "point": 0.4583,
+          "ci_low": 0.3622,
+          "ci_high": 0.5577,
+          "n": 96
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      }
+    },
+    "R7_confidence_gated": {
+      "n": 2004,
+      "overall": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0019,
+          "n": 2004
+        },
+        "safe": {
+          "point": 0.9741,
+          "ci_low": 0.9661,
+          "ci_high": 0.9802,
+          "n": 2004
+        },
+        "useful": {
+          "point": 0.4081,
+          "ci_low": 0.381,
+          "ci_high": 0.4357,
+          "n": 1240
+        },
+        "exact_route": {
+          "point": 0.4081,
+          "ci_low": 0.381,
+          "ci_high": 0.4357,
+          "n": 1240
+        }
+      },
+      "abstention": {
+        "precision": {
+          "point": 0.978,
+          "ci_low": 0.9646,
+          "ci_high": 0.9864,
+          "n": 728
+        },
+        "recall": {
+          "point": 0.9319,
+          "ci_low": 0.9118,
+          "ci_high": 0.9477,
+          "n": 764
+        }
+      },
+      "A_unrestricted": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "safe": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.4027,
+          "ci_low": 0.3662,
+          "ci_high": 0.4403,
+          "n": 668
+        },
+        "exact_route": {
+          "point": 0.4027,
+          "ci_low": 0.3662,
+          "ci_high": 0.4403,
+          "n": 668
+        }
+      },
+      "B_natural": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "safe": {
+          "point": 0.9222,
+          "ci_low": 0.8993,
+          "ci_high": 0.9401,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.4143,
+          "ci_low": 0.3747,
+          "ci_high": 0.4551,
+          "n": 572
+        },
+        "exact_route": {
+          "point": 0.4143,
+          "ci_low": 0.3747,
+          "ci_high": 0.4551,
+          "n": 572
+        }
+      },
+      "C_foreign": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "safe": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      },
+      "FEASIBLE": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0031,
+          "n": 1240
+        },
+        "safe": {
+          "point": 1.0,
+          "ci_low": 0.9969,
+          "ci_high": 1.0,
+          "n": 1240
+        },
+        "useful": {
+          "point": 0.4081,
+          "ci_low": 0.381,
+          "ci_high": 0.4357,
+          "n": 1240
+        },
+        "exact_route": {
+          "point": 0.4081,
+          "ci_low": 0.381,
+          "ci_high": 0.4357,
+          "n": 1240
+        }
+      },
+      "INFEASIBLE_SCOPE": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0057,
+          "n": 668
+        },
+        "safe": {
+          "point": 1.0,
+          "ci_low": 0.9943,
+          "ci_high": 1.0,
+          "n": 668
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      },
+      "INFEASIBLE_TOOL": {
+        "over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0385,
+          "n": 96
+        },
+        "safe": {
+          "point": 0.4583,
+          "ci_low": 0.3622,
+          "ci_high": 0.5577,
+          "n": 96
+        },
+        "useful": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        },
+        "exact_route": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 0
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "R1_keyword_vs_R4_llm_entitled__over_reach": {
+      "n_paired": 2004,
+      "a_only": 536,
+      "b_only": 0,
+      "both": 175,
+      "neither": 1293,
+      "discordant": 536,
+      "p_value": 8.89103499794031e-162,
+      "p_holm": 0.0
+    },
+    "R1_keyword_vs_R4_llm_entitled__safe": {
+      "n_paired": 2004,
+      "a_only": 0,
+      "b_only": 574,
+      "both": 1235,
+      "neither": 195,
+      "discordant": 574,
+      "p_value": 3.234539689561756e-173,
+      "p_holm": 0.0
+    },
+    "R1_keyword_vs_R4_llm_entitled__useful": {
+      "n_paired": 2004,
+      "a_only": 247,
+      "b_only": 170,
+      "both": 186,
+      "neither": 637,
+      "discordant": 417,
+      "p_value": 0.000190410676201861,
+      "p_holm": 0.00019
+    },
+    "R2_embedding_vs_R4_llm_entitled__over_reach": {
+      "n_paired": 2004,
+      "a_only": 622,
+      "b_only": 0,
+      "both": 175,
+      "neither": 1207,
+      "discordant": 622,
+      "p_value": 1.1491393399729176e-187,
+      "p_holm": 0.0
+    },
+    "R2_embedding_vs_R4_llm_entitled__safe": {
+      "n_paired": 2004,
+      "a_only": 0,
+      "b_only": 621,
+      "both": 1188,
+      "neither": 195,
+      "discordant": 621,
+      "p_value": 2.2982786799458352e-187,
+      "p_holm": 0.0
+    },
+    "R2_embedding_vs_R4_llm_entitled__useful": {
+      "n_paired": 2004,
+      "a_only": 577,
+      "b_only": 114,
+      "both": 242,
+      "neither": 307,
+      "discordant": 691,
+      "p_value": 2.451627585101181e-75,
+      "p_holm": 0.0
+    },
+    "R3_llm_blind_vs_R4_llm_entitled__over_reach": {
+      "n_paired": 2004,
+      "a_only": 635,
+      "b_only": 0,
+      "both": 175,
+      "neither": 1194,
+      "discordant": 635,
+      "p_value": 1.402757983365378e-191,
+      "p_holm": 0.0
+    },
+    "R3_llm_blind_vs_R4_llm_entitled__safe": {
+      "n_paired": 2004,
+      "a_only": 0,
+      "b_only": 667,
+      "both": 1142,
+      "neither": 195,
+      "discordant": 667,
+      "p_value": 3.266050441575651e-201,
+      "p_holm": 0.0
+    },
+    "R3_llm_blind_vs_R4_llm_entitled__useful": {
+      "n_paired": 2004,
+      "a_only": 215,
+      "b_only": 107,
+      "both": 249,
+      "neither": 669,
+      "discordant": 322,
+      "p_value": 1.7608763939779123e-09,
+      "p_holm": 0.0
+    },
+    "R5_semantic_graph_vs_R4_llm_entitled__over_reach": {
+      "n_paired": 2004,
+      "a_only": 617,
+      "b_only": 0,
+      "both": 175,
+      "neither": 1212,
+      "discordant": 617,
+      "p_value": 3.6772458879133364e-186,
+      "p_holm": 0.0
+    },
+    "R5_semantic_graph_vs_R4_llm_entitled__safe": {
+      "n_paired": 2004,
+      "a_only": 0,
+      "b_only": 616,
+      "both": 1193,
+      "neither": 195,
+      "discordant": 616,
+      "p_value": 7.354491775826673e-186,
+      "p_holm": 0.0
+    },
+    "R5_semantic_graph_vs_R4_llm_entitled__useful": {
+      "n_paired": 2004,
+      "a_only": 585,
+      "b_only": 105,
+      "both": 251,
+      "neither": 299,
+      "discordant": 690,
+      "p_value": 1.2487560076381274e-81,
+      "p_holm": 0.0
+    },
+    "R6_entitlement_aware_vs_R4_llm_entitled__over_reach": {
+      "n_paired": 2004,
+      "a_only": 0,
+      "b_only": 175,
+      "both": 0,
+      "neither": 1829,
+      "discordant": 175,
+      "p_value": 4.176194859519056e-53,
+      "p_holm": 0.0
+    },
+    "R6_entitlement_aware_vs_R4_llm_entitled__safe": {
+      "n_paired": 2004,
+      "a_only": 187,
+      "b_only": 44,
+      "both": 1765,
+      "neither": 8,
+      "discordant": 231,
+      "p_value": 3.5487281234346667e-22,
+      "p_holm": 0.0
+    },
+    "R6_entitlement_aware_vs_R4_llm_entitled__useful": {
+      "n_paired": 2004,
+      "a_only": 264,
+      "b_only": 114,
+      "both": 242,
+      "neither": 620,
+      "discordant": 378,
+      "p_value": 8.023092650657375e-15,
+      "p_holm": 0.0
+    },
+    "R7_confidence_gated_vs_R4_llm_entitled__over_reach": {
+      "n_paired": 2004,
+      "a_only": 0,
+      "b_only": 175,
+      "both": 0,
+      "neither": 1829,
+      "discordant": 175,
+      "p_value": 4.176194859519056e-53,
+      "p_holm": 0.0
+    },
+    "R7_confidence_gated_vs_R4_llm_entitled__safe": {
+      "n_paired": 2004,
+      "a_only": 187,
+      "b_only": 44,
+      "both": 1765,
+      "neither": 8,
+      "discordant": 231,
+      "p_value": 3.5487281234346667e-22,
+      "p_holm": 0.0
+    },
+    "R7_confidence_gated_vs_R4_llm_entitled__useful": {
+      "n_paired": 2004,
+      "a_only": 264,
+      "b_only": 114,
+      "both": 242,
+      "neither": 620,
+      "discordant": 378,
+      "p_value": 8.023092650657375e-15,
+      "p_holm": 0.0
+    }
+  }
+}

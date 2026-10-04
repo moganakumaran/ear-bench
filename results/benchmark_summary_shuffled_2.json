@@ -1,0 +1,58 @@
+{
+  "base_benchmark": "FDABench (arXiv:2509.02473, KDD'26)",
+  "policy_version": 1,
+  "policy_seed": 2,
+  "tasks_labelled": 834,
+  "tasks_total": 2007,
+  "instances": 2502,
+  "conditions": [
+    "A_unrestricted",
+    "B_natural",
+    "C_foreign"
+  ],
+  "strata_by_condition": {
+    "A_unrestricted": {
+      "FEASIBLE": 834
+    },
+    "B_natural": {
+      "FEASIBLE": 712,
+      "INFEASIBLE_TOOL": 122
+    },
+    "C_foreign": {
+      "INFEASIBLE_SCOPE": 834
+    }
+  },
+  "strata_overall": {
+    "FEASIBLE": 1546,
+    "INFEASIBLE_SCOPE": 834,
+    "INFEASIBLE_TOOL": 122
+  },
+  "principal_usage": {
+    "platform_admin": 834,
+    "public_policy_analyst": 586,
+    "commerce_analyst": 313,
+    "health_researcher": 242,
+    "external_contractor": 114,
+    "finance_analyst": 204,
+    "sports_media_analyst": 209
+  },
+  "domain_task_counts": {
+    "public_gov_census": 166,
+    "web_analytics": 92,
+    "commerce_retail": 72,
+    "geo_civic": 294,
+    "environment_climate": 51,
+    "health_bio": 77,
+    "finance_trading": 57,
+    "sports": 25
+  },
+  "databases_declared": 73,
+  "databases_observed": 73,
+  "tasks_with_db_column_disagreement": 17,
+  "governed_tools": [
+    "web_search",
+    "vector_search",
+    "file_system"
+  ],
+  "condition_A_passthrough_verified": true
+}
