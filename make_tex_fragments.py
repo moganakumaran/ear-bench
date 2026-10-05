@@ -509,6 +509,12 @@ def build(m: Macros) -> dict[str, str]:
         hit = _cell.get((cfg, "commerce_analyst"))
         if hit and hit[1]:
             m.add(f"pair-commerce-{key}", pct(hit[0] / hit[1]))
+    acc = pairs["pair_accounting"]
+    m.add("pair-built", str(acc["built"]))
+    m.add("pair-evaluated", str(acc["evaluated"]))
+    m.add("pair-heldout", str(acc["held_out_in_calibration"]))
+    m.add("pair-principals-vector",
+          str(sum(1 for c in pairs["per_principal"]["B_vector"].values() if c["n_revoke"])))
     m.add("pair-total", str(sum(pairs_sum["pairs"].values())))
     m.add("pair-configs", str(len(pairs_sum["pairs"])))
     m.add("pair-filesystem-tasks", str(char["governed_tool_coverage"]["file_system"]["tasks"]))

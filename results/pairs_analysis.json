@@ -265,5 +265,565 @@
         "p_holm": 0.0
       }
     }
+  },
+  "pair_accounting": {
+    "built": 2026,
+    "evaluated": 1620,
+    "held_out_in_calibration": 406,
+    "reported_sum": 1620
+  },
+  "per_principal": {
+    "A_web": {
+      "commerce_analyst": {
+        "n_revoke": 211,
+        "r4_over": 1,
+        "r6_over": 0,
+        "n_permit": 211,
+        "r4_fabs": 10,
+        "r6_fabs": 7,
+        "r4_over_reach": {
+          "point": 0.0047,
+          "ci_low": 0.0008,
+          "ci_high": 0.0264,
+          "n": 211
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0179,
+          "n": 211
+        },
+        "r4_false_abstention": {
+          "point": 0.0474,
+          "ci_low": 0.0259,
+          "ci_high": 0.085,
+          "n": 211
+        },
+        "r6_false_abstention": {
+          "point": 0.0332,
+          "ci_low": 0.0162,
+          "ci_high": 0.0669,
+          "n": 211
+        }
+      },
+      "sports_media_analyst": {
+        "n_revoke": 22,
+        "r4_over": 1,
+        "r6_over": 0,
+        "n_permit": 22,
+        "r4_fabs": 4,
+        "r6_fabs": 1,
+        "r4_over_reach": {
+          "point": 0.0455,
+          "ci_low": 0.0081,
+          "ci_high": 0.218,
+          "n": 22
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.1487,
+          "n": 22
+        },
+        "r4_false_abstention": {
+          "point": 0.1818,
+          "ci_low": 0.0731,
+          "ci_high": 0.3852,
+          "n": 22
+        },
+        "r6_false_abstention": {
+          "point": 0.0455,
+          "ci_low": 0.0081,
+          "ci_high": 0.218,
+          "n": 22
+        }
+      },
+      "public_policy_analyst": {
+        "n_revoke": 104,
+        "r4_over": 8,
+        "r6_over": 0,
+        "n_permit": 104,
+        "r4_fabs": 7,
+        "r6_fabs": 2,
+        "r4_over_reach": {
+          "point": 0.0769,
+          "ci_low": 0.0395,
+          "ci_high": 0.1445,
+          "n": 104
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0356,
+          "n": 104
+        },
+        "r4_false_abstention": {
+          "point": 0.0673,
+          "ci_low": 0.033,
+          "ci_high": 0.1325,
+          "n": 104
+        },
+        "r6_false_abstention": {
+          "point": 0.0192,
+          "ci_low": 0.0053,
+          "ci_high": 0.0674,
+          "n": 104
+        }
+      },
+      "finance_analyst": {
+        "n_revoke": 12,
+        "r4_over": 0,
+        "r6_over": 0,
+        "n_permit": 12,
+        "r4_fabs": 6,
+        "r6_fabs": 0,
+        "r4_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.2425,
+          "n": 12
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.2425,
+          "n": 12
+        },
+        "r4_false_abstention": {
+          "point": 0.5,
+          "ci_low": 0.2538,
+          "ci_high": 0.7462,
+          "n": 12
+        },
+        "r6_false_abstention": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.2425,
+          "n": 12
+        }
+      }
+    },
+    "B_vector": {
+      "commerce_analyst": {
+        "n_revoke": 235,
+        "r4_over": 59,
+        "r6_over": 0,
+        "n_permit": 235,
+        "r4_fabs": 14,
+        "r6_fabs": 7,
+        "r4_over_reach": {
+          "point": 0.2511,
+          "ci_low": 0.1999,
+          "ci_high": 0.3102,
+          "n": 235
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0161,
+          "n": 235
+        },
+        "r4_false_abstention": {
+          "point": 0.0596,
+          "ci_low": 0.0358,
+          "ci_high": 0.0975,
+          "n": 235
+        },
+        "r6_false_abstention": {
+          "point": 0.0298,
+          "ci_low": 0.0145,
+          "ci_high": 0.0602,
+          "n": 235
+        }
+      },
+      "sports_media_analyst": {
+        "n_revoke": 44,
+        "r4_over": 23,
+        "r6_over": 0,
+        "n_permit": 44,
+        "r4_fabs": 5,
+        "r6_fabs": 1,
+        "r4_over_reach": {
+          "point": 0.5227,
+          "ci_low": 0.3794,
+          "ci_high": 0.6625,
+          "n": 44
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0803,
+          "n": 44
+        },
+        "r4_false_abstention": {
+          "point": 0.1136,
+          "ci_low": 0.0495,
+          "ci_high": 0.2398,
+          "n": 44
+        },
+        "r6_false_abstention": {
+          "point": 0.0227,
+          "ci_low": 0.004,
+          "ci_high": 0.1181,
+          "n": 44
+        }
+      },
+      "public_policy_analyst": {
+        "n_revoke": 118,
+        "r4_over": 76,
+        "r6_over": 0,
+        "n_permit": 118,
+        "r4_fabs": 7,
+        "r6_fabs": 4,
+        "r4_over_reach": {
+          "point": 0.6441,
+          "ci_low": 0.5544,
+          "ci_high": 0.7247,
+          "n": 118
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0315,
+          "n": 118
+        },
+        "r4_false_abstention": {
+          "point": 0.0593,
+          "ci_low": 0.029,
+          "ci_high": 0.1174,
+          "n": 118
+        },
+        "r6_false_abstention": {
+          "point": 0.0339,
+          "ci_low": 0.0133,
+          "ci_high": 0.0839,
+          "n": 118
+        }
+      },
+      "health_researcher": {
+        "n_revoke": 32,
+        "r4_over": 20,
+        "r6_over": 0,
+        "n_permit": 32,
+        "r4_fabs": 9,
+        "r6_fabs": 1,
+        "r4_over_reach": {
+          "point": 0.625,
+          "ci_low": 0.4525,
+          "ci_high": 0.7707,
+          "n": 32
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.1072,
+          "n": 32
+        },
+        "r4_false_abstention": {
+          "point": 0.2812,
+          "ci_low": 0.1556,
+          "ci_high": 0.4537,
+          "n": 32
+        },
+        "r6_false_abstention": {
+          "point": 0.0312,
+          "ci_low": 0.0055,
+          "ci_high": 0.1574,
+          "n": 32
+        }
+      }
+    },
+    "D_domain": {
+      "commerce_analyst": {
+        "n_revoke": 249,
+        "r4_over": 0,
+        "r6_over": 0,
+        "n_permit": 249,
+        "r4_fabs": 14,
+        "r6_fabs": 7,
+        "r4_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0152,
+          "n": 249
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0152,
+          "n": 249
+        },
+        "r4_false_abstention": {
+          "point": 0.0562,
+          "ci_low": 0.0338,
+          "ci_high": 0.0922,
+          "n": 249
+        },
+        "r6_false_abstention": {
+          "point": 0.0281,
+          "ci_low": 0.0137,
+          "ci_high": 0.0569,
+          "n": 249
+        }
+      },
+      "sports_media_analyst": {
+        "n_revoke": 44,
+        "r4_over": 0,
+        "r6_over": 0,
+        "n_permit": 44,
+        "r4_fabs": 5,
+        "r6_fabs": 1,
+        "r4_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0803,
+          "n": 44
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0803,
+          "n": 44
+        },
+        "r4_false_abstention": {
+          "point": 0.1136,
+          "ci_low": 0.0495,
+          "ci_high": 0.2398,
+          "n": 44
+        },
+        "r6_false_abstention": {
+          "point": 0.0227,
+          "ci_low": 0.004,
+          "ci_high": 0.1181,
+          "n": 44
+        }
+      },
+      "public_policy_analyst": {
+        "n_revoke": 120,
+        "r4_over": 0,
+        "r6_over": 0,
+        "n_permit": 120,
+        "r4_fabs": 7,
+        "r6_fabs": 4,
+        "r4_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.031,
+          "n": 120
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.031,
+          "n": 120
+        },
+        "r4_false_abstention": {
+          "point": 0.0583,
+          "ci_low": 0.0285,
+          "ci_high": 0.1155,
+          "n": 120
+        },
+        "r6_false_abstention": {
+          "point": 0.0333,
+          "ci_low": 0.013,
+          "ci_high": 0.0826,
+          "n": 120
+        }
+      },
+      "finance_analyst": {
+        "n_revoke": 16,
+        "r4_over": 0,
+        "r6_over": 0,
+        "n_permit": 16,
+        "r4_fabs": 7,
+        "r6_fabs": 4,
+        "r4_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.1936,
+          "n": 16
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.1936,
+          "n": 16
+        },
+        "r4_false_abstention": {
+          "point": 0.4375,
+          "ci_low": 0.231,
+          "ci_high": 0.6682,
+          "n": 16
+        },
+        "r6_false_abstention": {
+          "point": 0.25,
+          "ci_low": 0.1018,
+          "ci_high": 0.495,
+          "n": 16
+        }
+      },
+      "external_contractor": {
+        "n_revoke": 23,
+        "r4_over": 0,
+        "r6_over": 0,
+        "n_permit": 23,
+        "r4_fabs": 1,
+        "r6_fabs": 4,
+        "r4_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.1431,
+          "n": 23
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.1431,
+          "n": 23
+        },
+        "r4_false_abstention": {
+          "point": 0.0435,
+          "ci_low": 0.0077,
+          "ci_high": 0.2099,
+          "n": 23
+        },
+        "r6_false_abstention": {
+          "point": 0.1739,
+          "ci_low": 0.0698,
+          "ci_high": 0.3714,
+          "n": 23
+        }
+      },
+      "health_researcher": {
+        "n_revoke": 58,
+        "r4_over": 0,
+        "r6_over": 0,
+        "n_permit": 58,
+        "r4_fabs": 10,
+        "r6_fabs": 3,
+        "r4_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0621,
+          "n": 58
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0621,
+          "n": 58
+        },
+        "r4_false_abstention": {
+          "point": 0.1724,
+          "ci_low": 0.0964,
+          "ci_high": 0.2891,
+          "n": 58
+        },
+        "r6_false_abstention": {
+          "point": 0.0517,
+          "ci_low": 0.0177,
+          "ci_high": 0.1414,
+          "n": 58
+        }
+      }
+    },
+    "D_web_vector": {
+      "commerce_analyst": {
+        "n_revoke": 208,
+        "r4_over": 74,
+        "r6_over": 0,
+        "n_permit": 208,
+        "r4_fabs": 10,
+        "r6_fabs": 7,
+        "r4_over_reach": {
+          "point": 0.3558,
+          "ci_low": 0.2939,
+          "ci_high": 0.4229,
+          "n": 208
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0181,
+          "n": 208
+        },
+        "r4_false_abstention": {
+          "point": 0.0481,
+          "ci_low": 0.0263,
+          "ci_high": 0.0862,
+          "n": 208
+        },
+        "r6_false_abstention": {
+          "point": 0.0337,
+          "ci_low": 0.0164,
+          "ci_high": 0.0678,
+          "n": 208
+        }
+      },
+      "sports_media_analyst": {
+        "n_revoke": 22,
+        "r4_over": 14,
+        "r6_over": 0,
+        "n_permit": 22,
+        "r4_fabs": 4,
+        "r6_fabs": 1,
+        "r4_over_reach": {
+          "point": 0.6364,
+          "ci_low": 0.4295,
+          "ci_high": 0.8027,
+          "n": 22
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.1487,
+          "n": 22
+        },
+        "r4_false_abstention": {
+          "point": 0.1818,
+          "ci_low": 0.0731,
+          "ci_high": 0.3852,
+          "n": 22
+        },
+        "r6_false_abstention": {
+          "point": 0.0455,
+          "ci_low": 0.0081,
+          "ci_high": 0.218,
+          "n": 22
+        }
+      },
+      "public_policy_analyst": {
+        "n_revoke": 102,
+        "r4_over": 71,
+        "r6_over": 0,
+        "n_permit": 102,
+        "r4_fabs": 7,
+        "r6_fabs": 2,
+        "r4_over_reach": {
+          "point": 0.6961,
+          "ci_low": 0.601,
+          "ci_high": 0.7769,
+          "n": 102
+        },
+        "r6_over_reach": {
+          "point": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0363,
+          "n": 102
+        },
+        "r4_false_abstention": {
+          "point": 0.0686,
+          "ci_low": 0.0336,
+          "ci_high": 0.1349,
+          "n": 102
+        },
+        "r6_false_abstention": {
+          "point": 0.0196,
+          "ci_low": 0.0054,
+          "ci_high": 0.0687,
+          "n": 102
+        }
+      }
+    }
   }
 }

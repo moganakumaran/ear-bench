@@ -36,6 +36,30 @@ REVOKED = {
 }
 
 
+def _write_principal_table(per_principal: dict) -> None:
+    """Artifact-only Markdown table backing the 'four principals' statement."""
+    lines = ["# Principal-level breakdown of the paired permit/revoke control",
+             "",
+             "Artifact table referenced by the manuscript. Evaluation pairs only;",
+             "calibration tasks are held out. Percentages with 95% Wilson intervals.",
+             ""]
+    for cfg, cells in per_principal.items():
+        rows = [(p, c) for p, c in cells.items() if c["n_revoke"]]
+        if not rows:
+            continue
+        lines += [f"## {cfg}", "",
+                  "| principal | n | R4 over-reach | R4 false abst. | R6 over-reach | R6 false abst. |",
+                  "|---|---:|---|---|---|---|"]
+        def f(d):
+            return f"{100*d['point']:.1f} [{100*d['ci_low']:.1f}, {100*d['ci_high']:.1f}]"
+        for p, c in sorted(rows, key=lambda kv: -kv[1]["n_revoke"]):
+            lines.append(f"| {p} | {c['n_revoke']} | {f(c['r4_over_reach'])} | "
+                         f"{f(c['r4_false_abstention'])} | {f(c['r6_over_reach'])} | "
+                         f"{f(c['r6_false_abstention'])} |")
+        lines.append("")
+    (RESULTS / "PRINCIPAL_BREAKDOWN.md").write_text("\n".join(lines))
+
+
 def main() -> int:
     bench = {i["instance_id"]: i
              for i in map(json.loads, (RESULTS / "benchmark_pairs.jsonl").open())}
@@ -101,7 +125,58 @@ def main() -> int:
         else:
             out["configs"][cfg]["routers"][who]["mcnemar_invocation"]["p_holm"] = p_adj
 
+    # --- drift guard -------------------------------------------------------
+    # The manuscript quotes both the BUILT pair count and the per-configuration
+    # n in the results table. Those differ because calibration tasks are held
+    # out. Assert the reported totals equal the evaluated pairs so the two can
+    # never silently diverge again.
+    reported = sum(e["routers"][R4]["n_revoke"] for e in out["configs"].values())
+    evaluated = sum(
+        1 for i in bench.values()
+        if i["arm"] == "REVOKE" and i["instance_id"] in by[R4]
+    )
+    built = sum(summary["pairs"].values())
+    if reported != evaluated:
+        raise AssertionError(
+            f"reported n ({reported}) != evaluated pairs ({evaluated})"
+        )
+    out["pair_accounting"] = {
+        "built": built,
+        "evaluated": evaluated,
+        "held_out_in_calibration": built - evaluated,
+        "reported_sum": reported,
+    }
+
+    # --- principal-level breakdown (artifact only, not the manuscript) ------
+    per_principal: dict[str, dict] = {}
+    for cfg in configs:
+        cells: dict[str, dict] = {}
+        for iid, inst in bench.items():
+            if inst["config"] != cfg:
+                continue
+            pr = inst["principal"]
+            c = cells.setdefault(pr, {"n_revoke": 0, "r4_over": 0, "r6_over": 0,
+                                      "n_permit": 0, "r4_fabs": 0, "r6_fabs": 0})
+            if inst["arm"] == "REVOKE" and iid in by[R4]:
+                c["n_revoke"] += 1
+                c["r4_over"] += bool(by[R4][iid]["over_reach"])
+                c["r6_over"] += bool(by[R6][iid]["over_reach"])
+            elif inst["arm"] == "PERMIT" and iid in by[R4]:
+                c["n_permit"] += 1
+                c["r4_fabs"] += bool(by[R4][iid]["abstained"])
+                c["r6_fabs"] += bool(by[R6][iid]["abstained"])
+        for pr, c in cells.items():
+            if not c["n_revoke"]:
+                continue
+            c["r4_over_reach"] = wilson(c["r4_over"], c["n_revoke"]).as_dict()
+            c["r6_over_reach"] = wilson(c["r6_over"], c["n_revoke"]).as_dict()
+            c["r4_false_abstention"] = wilson(c["r4_fabs"], max(c["n_permit"], 1)).as_dict()
+            c["r6_false_abstention"] = wilson(c["r6_fabs"], max(c["n_permit"], 1)).as_dict()
+        per_principal[cfg] = cells
+    out["per_principal"] = per_principal
+
     (RESULTS / "pairs_analysis.json").write_text(json.dumps(out, indent=2))
+    _write_principal_table(per_principal)
 
     # ---------------- report ----------------
     def pc(d):
