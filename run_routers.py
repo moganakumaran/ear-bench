@@ -308,8 +308,16 @@ def main() -> int:
             # the SCOPE must still be looked up by the declared principal, while
             # the name shown to the model stays opaque. That separation is the
             # whole point of the arm.
-            scope_key = inst.get("principal_declared", inst["principal"])
-            d, err = r4_llm(llm, inst, entitled_dbs[scope_key], seed)
+            # Paired instances (build_pairs.py) carry their OWN entitlement,
+            # which by construction differs from the policy's view of that
+            # principal. Prefer the instance's list when present; fall back to
+            # the policy lookup for the main benchmark arms.
+            if inst.get("entitled_databases") is not None:
+                dbs = inst["entitled_databases"]
+            else:
+                scope_key = inst.get("principal_declared", inst["principal"])
+                dbs = entitled_dbs[scope_key]
+            d, err = r4_llm(llm, inst, dbs, seed)
             return inst["instance_id"], d, err
 
         with ThreadPoolExecutor(max_workers=args.workers) as ex:

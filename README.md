@@ -14,11 +14,12 @@ seven routers.
 | | |
 |---|---|
 | `entitlements.yaml` | The declared policy: 8 data domains over 73 databases, 3 governed tools, 7 principals. Hand-written, version-controlled, asserted complete at build time. |
-| `build_benchmark.py` | Builds the entitlement-extended benchmark. `--policy-seed N` builds a shuffled-policy arm; `--opaque-principals` builds the one-factor control. |
+| `build_benchmark.py` | Builds the entitlement-extended benchmark. `--policy-seed N` builds a shuffled-policy arm; `--opaque-principals` builds the one-factor name control. |
+| `build_pairs.py` | Paired permit/revoke construction: toggles one entitlement the gold route requires, holding query, task, route, source and principal fixed. Build-time gates abort on a malformed pair. |
 | `validate_benchmark.py` | 23 independent checks that re-derive expectations from the policy and the raw data rather than trusting the builder. |
 | `routers.py`, `run_routers.py` | The seven routers and the experiment orchestrator. |
 | `metrics.py`, `stats.py` | Scoring and statistics, both with self-tests. Written before any router was run. |
-| `analyze.py`, `ablations.py`, `cross_arm.py`, `filtered_baselines.py`, `error_analysis.py`, `policy_sensitivity.py`, `reference_bounds.py` | Analyses reported in the paper. |
+| `analyze.py`, `analyze_pairs.py`, `ablations.py`, `cross_arm.py`, `filtered_baselines.py`, `error_analysis.py`, `policy_sensitivity.py`, `reference_bounds.py` | Analyses reported in the paper. |
 | `results/` | Every generated result file behind every number in the paper. |
 
 ## Base data
@@ -56,10 +57,12 @@ Router runs need an Anthropic key in `ANTHROPIC_API_KEY` or a local `.env`:
 
 Every model response is cached on disk by prompt hash, so a re-run of an
 unchanged experiment costs nothing and an interrupted run resumes for free. The
-full set of experiments in the paper cost **US$15.59** across 11,285 calls.
+full set of experiments in the paper cost **US$17.07** across roughly 11,300
+calls.
 
-`results/` is committed, so every analysis script can be re-run and every number
-in the paper re-derived **without making a single model call**.
+`results/` is committed in full, including the per-instance decision files, so
+every analysis script can be re-run and every number in the paper re-derived
+**without making a single model call**. That is also why the repository is ~80 MB.
 
 ## Licence
 

@@ -1,0 +1,269 @@
+{
+  "min_support_for_stats": 100,
+  "configs": {
+    "A_web": {
+      "pairs": 442,
+      "powered": true,
+      "routers": {
+        "R4_llm_entitled": {
+          "n_revoke": 349,
+          "n_permit": 349,
+          "over_reach_revoke": {
+            "point": 0.0287,
+            "ci_low": 0.0156,
+            "ci_high": 0.0519,
+            "n": 349
+          },
+          "false_abstention_permit": {
+            "point": 0.0774,
+            "ci_low": 0.0537,
+            "ci_high": 0.1102,
+            "n": 349
+          },
+          "invoked_permit": 0.4499,
+          "invoked_revoke": 0.0287,
+          "mcnemar_invocation": {
+            "n_paired": 349,
+            "a_only": 147,
+            "b_only": 0,
+            "both": 10,
+            "neither": 192,
+            "discordant": 147,
+            "p_value": 1.1210387714598537e-44,
+            "p_holm": 0.0
+          }
+        },
+        "R6_entitlement_aware": {
+          "n_revoke": 349,
+          "n_permit": 349,
+          "over_reach_revoke": {
+            "point": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0109,
+            "n": 349
+          },
+          "false_abstention_permit": {
+            "point": 0.0287,
+            "ci_low": 0.0156,
+            "ci_high": 0.0519,
+            "n": 349
+          },
+          "invoked_permit": 0.4241,
+          "invoked_revoke": 0.0,
+          "mcnemar_invocation": {
+            "n_paired": 349,
+            "a_only": 148,
+            "b_only": 0,
+            "both": 0,
+            "neither": 201,
+            "discordant": 148,
+            "p_value": 5.605193857299268e-45,
+            "p_holm": 0.0
+          }
+        }
+      },
+      "mcnemar_R4_vs_R6_over_reach": {
+        "n_paired": 349,
+        "a_only": 10,
+        "b_only": 0,
+        "both": 0,
+        "neither": 339,
+        "discordant": 10,
+        "p_value": 0.001953125,
+        "p_holm": 0.003906
+      }
+    },
+    "B_vector": {
+      "pairs": 535,
+      "powered": true,
+      "routers": {
+        "R4_llm_entitled": {
+          "n_revoke": 429,
+          "n_permit": 429,
+          "over_reach_revoke": {
+            "point": 0.4149,
+            "ci_low": 0.3693,
+            "ci_high": 0.4621,
+            "n": 429
+          },
+          "false_abstention_permit": {
+            "point": 0.0816,
+            "ci_low": 0.0592,
+            "ci_high": 0.1114,
+            "n": 429
+          },
+          "invoked_permit": 0.62,
+          "invoked_revoke": 0.4149,
+          "mcnemar_invocation": {
+            "n_paired": 429,
+            "a_only": 98,
+            "b_only": 10,
+            "both": 168,
+            "neither": 153,
+            "discordant": 108,
+            "p_value": 2.6510752046570397e-19,
+            "p_holm": 0.0
+          }
+        },
+        "R6_entitlement_aware": {
+          "n_revoke": 429,
+          "n_permit": 429,
+          "over_reach_revoke": {
+            "point": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0089,
+            "n": 429
+          },
+          "false_abstention_permit": {
+            "point": 0.0303,
+            "ci_low": 0.0178,
+            "ci_high": 0.0511,
+            "n": 429
+          },
+          "invoked_permit": 0.6177,
+          "invoked_revoke": 0.0,
+          "mcnemar_invocation": {
+            "n_paired": 429,
+            "a_only": 265,
+            "b_only": 0,
+            "both": 0,
+            "neither": 164,
+            "discordant": 265,
+            "p_value": 3.3735033418337674e-80,
+            "p_holm": 0.0
+          }
+        }
+      },
+      "mcnemar_R4_vs_R6_over_reach": {
+        "n_paired": 429,
+        "a_only": 178,
+        "b_only": 0,
+        "both": 0,
+        "neither": 251,
+        "discordant": 178,
+        "p_value": 5.22024357439882e-54,
+        "p_holm": 0.0
+      }
+    },
+    "D_domain": {
+      "pairs": 637,
+      "powered": true,
+      "routers": {
+        "R4_llm_entitled": {
+          "n_revoke": 510,
+          "n_permit": 510,
+          "over_reach_revoke": {
+            "point": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0075,
+            "n": 510
+          },
+          "false_abstention_permit": {
+            "point": 0.0863,
+            "ci_low": 0.0649,
+            "ci_high": 0.1138,
+            "n": 510
+          }
+        },
+        "R6_entitlement_aware": {
+          "n_revoke": 510,
+          "n_permit": 510,
+          "over_reach_revoke": {
+            "point": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0075,
+            "n": 510
+          },
+          "false_abstention_permit": {
+            "point": 0.0451,
+            "ci_low": 0.0302,
+            "ci_high": 0.0668,
+            "n": 510
+          }
+        }
+      },
+      "mcnemar_R4_vs_R6_over_reach": {
+        "n_paired": 510,
+        "a_only": 0,
+        "b_only": 0,
+        "both": 0,
+        "neither": 510,
+        "p_value": 1.0,
+        "note": "no discordant pairs; the routers never differ on this outcome",
+        "p_holm": 1.0
+      }
+    },
+    "D_web_vector": {
+      "pairs": 412,
+      "powered": true,
+      "routers": {
+        "R4_llm_entitled": {
+          "n_revoke": 332,
+          "n_permit": 332,
+          "over_reach_revoke": {
+            "point": 0.4789,
+            "ci_low": 0.4257,
+            "ci_high": 0.5326,
+            "n": 332
+          },
+          "false_abstention_permit": {
+            "point": 0.0633,
+            "ci_low": 0.0417,
+            "ci_high": 0.0948,
+            "n": 332
+          },
+          "invoked_permit": 0.6837,
+          "invoked_revoke": 0.4789,
+          "mcnemar_invocation": {
+            "n_paired": 332,
+            "a_only": 71,
+            "b_only": 3,
+            "both": 156,
+            "neither": 102,
+            "discordant": 74,
+            "p_value": 7.157428404298838e-18,
+            "p_holm": 0.0
+          }
+        },
+        "R6_entitlement_aware": {
+          "n_revoke": 332,
+          "n_permit": 332,
+          "over_reach_revoke": {
+            "point": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0114,
+            "n": 332
+          },
+          "false_abstention_permit": {
+            "point": 0.0301,
+            "ci_low": 0.0164,
+            "ci_high": 0.0545,
+            "n": 332
+          },
+          "invoked_permit": 0.747,
+          "invoked_revoke": 0.0,
+          "mcnemar_invocation": {
+            "n_paired": 332,
+            "a_only": 248,
+            "b_only": 0,
+            "both": 0,
+            "neither": 84,
+            "discordant": 248,
+            "p_value": 4.421718300208356e-75,
+            "p_holm": 0.0
+          }
+        }
+      },
+      "mcnemar_R4_vs_R6_over_reach": {
+        "n_paired": 332,
+        "a_only": 159,
+        "b_only": 0,
+        "both": 0,
+        "neither": 173,
+        "discordant": 159,
+        "p_value": 2.7369110631344083e-48,
+        "p_holm": 0.0
+      }
+    }
+  }
+}

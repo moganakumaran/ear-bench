@@ -1,0 +1,44 @@
+{
+  "design": "EXPERIMENT_DESIGN.md / ROBUSTNESS_DESIGN.md",
+  "pairs": {
+    "A_web": 442,
+    "B_vector": 535,
+    "D_web_vector": 412,
+    "D_domain": 637
+  },
+  "instances": 4052,
+  "min_support_for_stats": 100,
+  "underpowered_configs": [],
+  "principals_per_config": {
+    "A_web": {
+      "commerce_analyst": 258,
+      "sports_media_analyst": 29,
+      "public_policy_analyst": 139,
+      "finance_analyst": 16
+    },
+    "B_vector": {
+      "commerce_analyst": 292,
+      "sports_media_analyst": 56,
+      "public_policy_analyst": 148,
+      "health_researcher": 39
+    },
+    "D_web_vector": {
+      "commerce_analyst": 252,
+      "sports_media_analyst": 29,
+      "public_policy_analyst": 131
+    },
+    "D_domain": {
+      "commerce_analyst": 311,
+      "sports_media_analyst": 56,
+      "public_policy_analyst": 156,
+      "finance_analyst": 20,
+      "external_contractor": 25,
+      "health_researcher": 69
+    }
+  },
+  "strata": {
+    "FEASIBLE": 2026,
+    "INFEASIBLE_TOOL": 1389,
+    "INFEASIBLE_SCOPE": 637
+  }
+}

@@ -112,12 +112,14 @@ class Macros:
 
 
 def table(caption: str, label: str, spec: str, header: list[str],
-          rows: list[list[str]], note: str = "") -> str:
+          rows: list[list[str]], note: str = "", size: str = "small",
+          colsep: str | None = None) -> str:
     out = [
         "\\begin{table}[t]",
         f"\\caption{{{caption}}}\\label{{{label}}}",
         "\\centering",
-        "\\small",
+        f"\\{size}",
+        *( [f"\\setlength{{\\tabcolsep}}{{{colsep}}}"] if colsep else [] ),
         f"\\begin{{tabular}}{{{spec}}}",
         "\\toprule",
         " & ".join(header) + " \\\\",
@@ -150,6 +152,8 @@ def build(m: Macros) -> dict[str, str]:
     var = load("router_results_haiku_t0.7_s202.json")
     cross = load("cross_arm.json")
     opaque = load("router_results_haiku_opaque.json")
+    pairs = load("pairs_analysis.json")
+    pairs_sum = load("benchmark_pairs_summary.json")
 
     frags: dict[str, str] = {}
 
@@ -208,8 +212,9 @@ def build(m: Macros) -> dict[str, str]:
         rows.append([
             ROUTER_LABEL[r][0],
             ci(e["overall"]["over_reach"]),
-            ci(e["overall"]["safe"]),
-            ci(e["overall"]["useful"]),
+            pct(e["overall"]["safe"]["point"]),
+            pct(e["overall"]["useful"]["point"]),
+            f"{res_main['results'][r]['overall']['tool_set_f1']:.3f}",
             pct(ab["precision"]["point"]) if ab["precision"]["n"] else "--",
             pct(ab["recall"]["point"]),
         ])
@@ -222,17 +227,19 @@ def build(m: Macros) -> dict[str, str]:
         e = filt["routers"][name]
         rows.append([
             name.replace("+", "$+$"),
-            ci(e["over_reach"]), ci(e["safe"]), ci(e["useful"]), "--", "--",
+            ci(e["over_reach"]), pct(e["safe"]["point"]),
+            pct(e["useful"]["point"]), "--", "--", "--",
         ])
     frags["tab_main"] = table(
         caption=(
             "Main results, Claude Haiku 4.5, "
-            f"{res_main['eval_instances']} instances, with 95\\% Wilson intervals. "
-            "The last two rows apply the same post-hoc entitlement filter to R3 "
-            "and R4."
+            f"{res_main['eval_instances']} instances. Over-reach carries a 95\\% "
+            "Wilson interval; other columns are point estimates. The last two "
+            "rows apply the same post-hoc entitlement filter to R3 and R4."
         ),
-        label="tab:main", spec="lccccc",
-        header=["", "Over-reach", "Safe", "Useful", "Abst.\\ prec.", "Abst.\\ rec."],
+        label="tab:main", spec="lcccccc", size="footnotesize", colsep="3pt",
+        header=["", "Over-reach", "Safe", "Useful", "Tool $F_1$",
+                "Abst.\\ prec.", "Abst.\\ rec."],
         rows=rows,
         note=(
             "Usefulness is defined on feasible instances only. Filtering drives "
@@ -390,6 +397,7 @@ def build(m: Macros) -> dict[str, str]:
 
     seeds = [k for k in cross if k.startswith("shuffled_seed")]
     sc = [cross[k]["R4_llm_entitled"]["INFEASIBLE_SCOPE:over_reach"]["arm"]["point"] for k in sorted(seeds)]
+    m.add("scope-shuffled-RFour", pct(cross["shuffled_seed0"]["R4_llm_entitled"]["INFEASIBLE_SCOPE:over_reach"]["arm"]["point"]))
     fa = [cross[k]["R4_llm_entitled"]["FEASIBLE:abstained"]["arm"]["point"] for k in sorted(seeds)]
     m.add("shuffle-seeds", str(len(seeds)))
     m.add("shuffle-scope-min", pct(min(sc)))
@@ -456,6 +464,71 @@ def build(m: Macros) -> dict[str, str]:
               pval(filt["vs_reference"][nm]["safe"].get("p_holm")))
         m.add(f"pfilterusefulholm-{key}",
               pval(filt["vs_reference"][nm]["useful"].get("p_holm")))
+
+    # ---- paired permit/revoke control ------------------------------------
+    PAIR_LABEL = {"D_domain": "data domain", "A_web": "web-search",
+                  "B_vector": "vector-search", "D_web_vector": "web + vector"}
+    PAIR_KEY = {"D_domain": "domain", "A_web": "web",
+                "B_vector": "vector", "D_web_vector": "webvector"}
+    rows = []
+    for cfg in ("D_domain", "A_web", "B_vector", "D_web_vector"):
+        if cfg not in pairs["configs"]:
+            continue
+        e = pairs["configs"][cfg]
+        r4 = e["routers"]["R4_llm_entitled"]
+        r6 = e["routers"]["R6_entitlement_aware"]
+        rows.append([
+            PAIR_LABEL[cfg], str(r4["n_revoke"]),
+            ci(r4["over_reach_revoke"]), ci(r4["false_abstention_permit"]),
+            ci(r6["over_reach_revoke"]), ci(r6["false_abstention_permit"]),
+        ])
+        k = PAIR_KEY[cfg]
+        m.add(f"pair-over-RFour-{k}", pct(r4["over_reach_revoke"]["point"]))
+        m.add(f"pair-over-RSix-{k}", pct(r6["over_reach_revoke"]["point"]))
+        m.add(f"pair-fabs-RFour-{k}", pct(r4["false_abstention_permit"]["point"]))
+        m.add(f"pair-n-{k}", str(r4["n_revoke"]))
+        if "invoked_permit" in r4:
+            m.add(f"pair-inv-permit-{k}", pct(r4["invoked_permit"]))
+            m.add(f"pair-inv-revoke-{k}", pct(r4["invoked_revoke"]))
+    # Per-principal cells for the capability-vs-principal argument. Hand-typing
+    # these in prose would bypass the numeric guard.
+    import json as _j
+    _bench = {i["instance_id"]: i for i in
+              map(_j.loads, (RESULTS / "benchmark_pairs.jsonl").open())}
+    _dec = {r["instance_id"]: r for r in
+            map(_j.loads, (RESULTS / "decisions_haiku_pairs.jsonl").open())
+            if r["router"] == "R4_llm_entitled"}
+    _cell = {}
+    for iid, inst in _bench.items():
+        if inst["arm"] != "REVOKE" or iid not in _dec:
+            continue
+        k = (inst["config"], inst["principal"])
+        a, b = _cell.get(k, (0, 0))
+        _cell[k] = (a + bool(_dec[iid]["over_reach"]), b + 1)
+    for cfg, key in PAIR_KEY.items():
+        hit = _cell.get((cfg, "commerce_analyst"))
+        if hit and hit[1]:
+            m.add(f"pair-commerce-{key}", pct(hit[0] / hit[1]))
+    m.add("pair-total", str(sum(pairs_sum["pairs"].values())))
+    m.add("pair-configs", str(len(pairs_sum["pairs"])))
+    m.add("pair-filesystem-tasks", str(char["governed_tool_coverage"]["file_system"]["tasks"]))
+    frags["tab_pairs"] = table(
+        caption=(
+            "Paired permit/revoke control. One entitlement that the gold route "
+            "requires is toggled; everything else in the pair is held fixed. "
+            "Over-reach is measured on the revoked member, false abstention on "
+            "the permitted member."
+        ),
+        label="tab:pairs", spec="lrcccc",
+        header=["Revoked", "$n$", "R4 over-reach", "R4 false abst.",
+                "R6 over-reach", "R6 false abst."],
+        rows=rows,
+        note=(
+            "Percentages with 95\\% Wilson intervals. A \\texttt{file\\_system} "
+            "configuration is not reported: no non-administrative principal can "
+            "host such a pair (Section~\\ref{sec:threats})."
+        ),
+    )
 
     return frags
 
